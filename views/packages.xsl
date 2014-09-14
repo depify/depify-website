@@ -46,7 +46,6 @@
         $(document).ready(function() {
         $('#package-table').
         dataTable( {
-        "sScrollY": "490px",
         "bPaginate": false,
         "bScrollCollapse": true,
         "bAutoWidth": true
