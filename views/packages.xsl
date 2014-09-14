@@ -24,7 +24,7 @@
       </tr>
     </thead>
   <tbody>     
-    <xsl:for-each select="//*:package">
+    <xsl:for-each select="//*:dep">
       <tr>
         <xsl:choose>
           <xsl:when test="count(tokenize(@name,'\.')) gt 3">
