@@ -7,6 +7,7 @@
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns:wc="http://www.webcomposite.com/xslt"
     xmlns:fn="http://www.w3.org/2005/xpath-functions"
+    xmlns:depify="https://github.com/xquery/depify"
     exclude-result-prefixes="xs prop"
     extension-element-prefixes="ixsl"
     version="2.0">
@@ -17,27 +18,19 @@
   <table cellpadding="0" cellspacing="0" border="1" width="100%" class="display" id="package-table">
     <thead>
       <tr>
-        <th>sp.type.version</th>
-        <th>app name</th>
+        <th>path</th>
+        <th>name</th>
         <th>author</th>
         <th>description</th>
       </tr>
     </thead>
   <tbody>     
-    <xsl:for-each select="//*:dep">
+    <xsl:for-each select="/depify:depify/depify:dep">
       <tr>
-        <xsl:choose>
-          <xsl:when test="count(tokenize(@name,'\.')) gt 3">
-            <td><xsl:copy-of select="tokenize(@name,'\.')[1]"/>.<xsl:copy-of select="tokenize(@name,'\.')[2]"/>.<xsl:copy-of select="tokenize(@name,'\.')[3]"/></td>
-            <td><xsl:copy-of select="tokenize(@name,'\.')[4]"/> v<xsl:value-of select="@version"/></td>
-          </xsl:when>
-          <xsl:otherwise>
-            <td><xsl:copy-of select="tokenize(@name,'\.')[1]"/>.<xsl:copy-of select="tokenize(@name,'\.')[2]"/></td>
-            <td><xsl:copy-of select="tokenize(@name,'\.')[3]"/> v<xsl:value-of select="@version"/></td>
-          </xsl:otherwise>
-        </xsl:choose>
-        <td><xsl:value-of select="*:author"/></td>
-        <td><xsl:value-of select="substring(*:desc,1,75)"/>...</td>
+        <td><xsl:value-of select="@path"/></td>
+        <td><xsl:value-of select="@name"/></td>
+        <td><xsl:value-of select="@version"/></td>
+        <td><xsl:value-of select="depify:desc"/></td>        
       </tr>
     </xsl:for-each>
   </tbody>
