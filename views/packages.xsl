@@ -18,8 +18,9 @@
   <table cellpadding="0" cellspacing="0" border="1" width="100%" class="display" id="package-table">
     <thead>
       <tr>
-        <th>path</th>
+        <th>type</th>
         <th>name</th>
+        <th>version</th>
         <th>author</th>
         <th>description</th>
       </tr>
@@ -27,9 +28,11 @@
   <tbody>     
     <xsl:for-each select="/depify:depify/depify:dep">
       <tr>
-        <td><xsl:value-of select="substring-after(@path,'/packages/master/')"/></td>
+        <td><xsl:value-of select="substring-before(substring-after(@path,'/packages/master/'),'/')"/></td>
+        
         <td><xsl:value-of select="@name"/></td>
         <td><xsl:value-of select="@version"/></td>
+        <td><xsl:value-of select="depify:author/@id"/></td>        
         <td><xsl:value-of select="depify:desc"/></td>        
       </tr>
     </xsl:for-each>
