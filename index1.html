@@ -2,47 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A layout example that shows off a responsive product landing page.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="A layout example that shows off a responsive product landing page.">
     <title>DEPify</title>
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
-    <link rel="stylesheet" href="/libs/purecss/layouts/marketing.css">
-    <link rel="stylesheet" href="/libs/depify.css">
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
+<link rel="stylesheet" href="/libs/purecss/layouts/marketing.css">
+<link rel="stylesheet" href="/libs/depify.css">
 
-    <style type="text/css" title="currentStyle">
+<style type="text/css" title="currentStyle">
 			@import "/libs/DataTables-1.9.4/media/css/demo_page.css";
 			@import "/libs/DataTables-1.9.4/media/css/demo_table.css";
-    </style>
+</style>
 
-    <script type="text/javascript" language="javascript" src="/libs/Saxon-CE_1.1/Saxonce/Saxonce.nocache.js">&#160;</script>
-    <script type="application/xslt+xml" language="xslt2.0" src="/views/packages.xsl" data-source="/packages/packages.xml" data-initial-template="main">&#160;</script>
-    <script type="text/javascript" language="javascript" src="/libs/DataTables-1.9.4/media/js/jquery.js">&#160;</script>
-    <script type="text/javascript" language="javascript" src="/libs/DataTables-1.9.4/media/js/jquery.dataTables.js">&#160;</script>
+<script type="text/javascript" language="javascript" src="/libs/Saxon-CE_1.1/SaxonceDebug/Saxonce.nocache.js">&#160;</script>
+<script type="application/xslt+xml" language="xslt2.0" src="/views/packages.xsl" data-source="/packages/packages.xml" data-initial-template="main">&#160;</script>
+<script type="text/javascript" language="javascript" src="/libs/DataTables-1.9.4/media/js/jquery.js">&#160;</script>
+<script type="text/javascript" language="javascript" src="/libs/DataTables-1.9.4/media/js/jquery.dataTables.js">&#160;</script>
+
 </head>
 <body>
 
 <div class="content" style="background-color:#EEEEEE;">
-
     <div class="header">
         <div class="pure-menu pure-menu-open pure-menu-fixed pure-menu-horizontal">
             <a class="pure-menu-heading" href="/">DEPify</a>
-
             <ul>
-                <li><a href="/all/index.html">All Packages</a></li>
+                <li class="pure-menu-selected"><a href="/all/index.html">All Packages</a></li>
                 <li><a href="/submit.html">Submit Package</a></li>
                 <li> <a href="depify-client-1.0.jar" class="pure-button primary-button">Download DEPify</a></li>
+
             </ul>
         </div>
     </div>
-    
+
     <div class="content">
-      <div class="pure-u-1">
-        <div id="package-list">        
-        </div>
-      </div>
-    </div>
+      <br/><br/><br/>
+  
+<div id="packages">
+  <img style="display: block;margin-left: auto;margin-right: auto"
+       src="images/loading.gif"/><br/>
+</div>
 
 </div>
+
+
     <footer>
        <span id="footer-date">packages last-updated </span>  |
        <iframe src="http://ghbtns.com/github-btn.html?user=depify&repo=depify-packages&type=follow&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20"></iframe>
@@ -57,6 +60,7 @@
         e.preventDefault();
         }, 'a[href="#"]');
         });
+
     </script>
 </body>
 </html>
