@@ -65,7 +65,6 @@
         "bSort": true,
         "bInfo": false,
         "bAutoWidth": false,
-        "sScrollY": "225px",
         "bPaginate": false,
         "bScrollCollapse": true
         }) });
