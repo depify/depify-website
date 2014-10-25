@@ -1,4 +1,4 @@
-<depify xmlns="https://github.com/xquery/depify" ts="2014-10-25T15:37:22.811Z"><dep path="/packages/master/xslt/2/saxon-ce/1.1/" name="saxon-ce" repo-uri="http://www.saxonica.com/ce/download/Saxon-CE_1.1.zip" version="1.1"><title>Saxon-CE</title><desc>Saxon-CE (client edition) is Saxonica's implementation of XSLT 2.0 for use on web browsers.
+<depify xmlns="https://github.com/xquery/depify" ts="2014-10-25T15:39:09.099Z"><dep path="/packages/master/xslt/2/saxon-ce/1.1/" name="saxon-ce" repo-uri="http://www.saxonica.com/ce/download/Saxon-CE_1.1.zip" version="1.1"><title>Saxon-CE</title><desc>Saxon-CE (client edition) is Saxonica's implementation of XSLT 2.0 for use on web browsers.
 The current release is Saxon-CE 1.1.
 Unlike previous releases, Saxon-CE 1.1 is open-source software.
   </desc><license type="MPL-V2.0"/><author id="">Saxonica</author><website>http://www.saxonica.com/ce/index.xml/</website></dep><dep path="/packages/master/xslt/2/Schematron/1.6/" name="schematron" repo-uri="http://www.schematron.com/tmp/iso-schematron-xslt2.zip" version="1.6"><title>ISO SCHEMATRON 2010</title><desc>ISO Schematron is a language for making assertion about the presence or absense
@@ -72,7 +72,7 @@ and mapping provider users to MarkLogic users.</desc><license type="?"/><author 
     <namespace>http://www.marklogic.com/mx</namespace>
     <uri>schematron.xqy</uri>
   </xquery><dep name="xslt.2.Schematron" version="1.6"/></dep><dep path="/packages/master/xquery/marklogic/ml-queue/1.0/" name="ml-queue" version="1.0" repo-uri="https://github.com/grtjn/ml-queue"><title>ml-queue</title><desc>The normal task server queue doesn't discriminate between kinds of tasks. CPF processing can for instance flood the queue, and cause front-end request respond slowly. This queue is maintained separately, allows prioritizing, and the cron is designed only to launch tasks when the task server has spare threads. In other words, ideal for background processing.
-  </desc><license type="?"/><author id="">Geert Josten</author><website>https://github.com/grtjn/ml-queue</website><repo type="git" uri="https://github.com/grtjn/ml-queue.git"/><app type="standalone"/></dep><dep path="/packages/master/xquery/3/xqueryparser.xq/1.0/" name="xqueryparserxq" version="1.0" repo-uri="https://github.com/jpcs/xqueryparser.xq.git"><title>xqueryparser.xq</title><desc>An parser for XQuery 3.0 and MarkLogic extensions.</desc><license type="APLV2.0">
+  </desc><license type="?"/><author id="">Geert Josten</author><website>https://github.com/grtjn/ml-queue</website><repo type="git" uri="https://github.com/grtjn/ml-queue.git"/><app type="standalone"/></dep><dep path="/packages/master/xquery/3/xqueryparser.xq/1.0/" name="xqueryparser.xq" version="1.0" repo-uri="https://github.com/jpcs/xqueryparser.xq.git"><title>xqueryparser.xq</title><desc>An parser for XQuery 3.0 and MarkLogic extensions.</desc><license type="APLV2.0">
       <uri>https://github.com/jpcs/xqueryparser.xq/blob/master/LICENSE</uri>
    </license><repo type="git">
       <uri>https://github.com/jpcs/xqueryparser.xq.git</uri>
@@ -89,18 +89,18 @@ and mapping provider users to MarkLogic users.</desc><license type="?"/><author 
       <namespace>http://snelson.org.uk/functions/transform</namespace>
       <uri>transform.xq</uri>
    </xquery></dep><dep path="/packages/master/xquery/3/rbtree.xq/1.0/" name="rbtree.xq" version="1.0" repo-uri="https://github.com/jpcs/rbtree.xq.git"><title>rbtree.xq</title><desc>An implementation of a red/black tree built using XQuery 3.0 higher order functions, and an associative map library built on top of it..</desc><license type="APLV2.0">
-      <uri>https://github.com/jpcs/rbtree.xq/blob/master/LICENSE</uri>
-   </license><repo type="git">
-      <uri>https://github.com/jpcs/rbtree.xq.git</uri>
-   </repo><author id="jpcs">John Snelson</author><website>https://github.com/jpcs/rbtree.xq</website><xquery version="3.0">
-      <prefix>rbtree</prefix>
-      <namespace>http://snelson.org.uk/functions/rbtree</namespace>
-      <uri>transform.xq</uri>
-   </xquery><xquery version="3.0">
-      <prefix>map</prefix>
-      <namespace>http://snelson.org.uk/functions/map</namespace>
-      <uri>map.xq</uri>
-   </xquery></dep><dep path="/packages/master/xquery/3/functional.xq/1.0/" name="functional.xq" version="1.0" repo-uri="git://github.com/jpcs/functional.xq.git"><title>functional.xq</title><desc>A library of useful functionality for working with XQuery 3.0 higher order functions.
+    <uri>https://github.com/jpcs/rbtree.xq/blob/master/LICENSE</uri>
+  </license><repo type="git">
+    <uri>https://github.com/jpcs/rbtree.xq.git</uri>
+  </repo><author id="jpcs">John Snelson</author><website>https://github.com/jpcs/rbtree.xq</website><xquery version="3.0">
+    <prefix>rbtree</prefix>
+    <namespace>http://snelson.org.uk/functions/rbtree</namespace>
+    <uri>transform.xq</uri>
+  </xquery><xquery version="3.0">
+    <prefix>map</prefix>
+    <namespace>http://snelson.org.uk/functions/map</namespace>
+    <uri>map.xq</uri>
+  </xquery></dep><dep path="/packages/master/xquery/3/functional.xq/1.0/" name="functional.xq" version="1.0" repo-uri="git://github.com/jpcs/functional.xq.git"><title>functional.xq</title><desc>A library of useful functionality for working with XQuery 3.0 higher order functions.
   Includes a number of functions from the standard Haskell prelude, as well as functions to
   perform currying, function composition, and Y-combination.</desc><license type="APLV2">
     <uri>https://github.com/jpcs/functional.xq/blob/master/LICENSE</uri>
