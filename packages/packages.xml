@@ -1,4 +1,4 @@
-<depify xmlns="https://github.com/xquery/depify" ts="2014-10-25T15:39:09.099Z"><dep path="/packages/master/xslt/2/saxon-ce/1.1/" name="saxon-ce" repo-uri="http://www.saxonica.com/ce/download/Saxon-CE_1.1.zip" version="1.1"><title>Saxon-CE</title><desc>Saxon-CE (client edition) is Saxonica's implementation of XSLT 2.0 for use on web browsers.
+<depify xmlns="https://github.com/xquery/depify" ts="2014-10-25T15:49:31.768Z"><dep path="/packages/master/xslt/2/saxon-ce/1.1/" name="saxon-ce" repo-uri="http://www.saxonica.com/ce/download/Saxon-CE_1.1.zip" version="1.1"><title>Saxon-CE</title><desc>Saxon-CE (client edition) is Saxonica's implementation of XSLT 2.0 for use on web browsers.
 The current release is Saxon-CE 1.1.
 Unlike previous releases, Saxon-CE 1.1 is open-source software.
   </desc><license type="MPL-V2.0"/><author id="">Saxonica</author><website>http://www.saxonica.com/ce/index.xml/</website></dep><dep path="/packages/master/xslt/2/Schematron/1.6/" name="schematron" repo-uri="http://www.schematron.com/tmp/iso-schematron-xslt2.zip" version="1.6"><title>ISO SCHEMATRON 2010</title><desc>ISO Schematron is a language for making assertion about the presence or absense
@@ -110,7 +110,9 @@ and mapping provider users to MarkLogic users.</desc><license type="?"/><author 
     <prefix>func</prefix>
     <namespace>http://snelson.org.uk/functions/functional</namespace>
     <uri>functional.xq</uri>
-  </xquery></dep><dep path="/packages/master/xquery/1/functx/1.0/" name="xquery.1.functx" version="1.0"><title>FunctX library</title><desc>The FunctX function library is a set of useful functions on
+  </xquery></dep><dep path="/packages/master/xquery/3/data.xq/1.0/" name="data.xq" version="1.0" repo-uri="https://github.com/jpcs/data.xq.git"><title>xqueryparser.xq</title><desc>An XQuery 3.0 library for defining algebraic data types, and performing structural pattern matching on them..</desc><license type="APLV2.0">
+      <uri>https://github.com/jpcs/data.xq/blob/master/LICENSE</uri>
+   </license><author id="jpcs">John Snelson</author><website>https://github.com/jpcs/data.xq</website></dep><dep path="/packages/master/xquery/1/functx/1.0/" name="xquery.1.functx" version="1.0"><title>FunctX library</title><desc>The FunctX function library is a set of useful functions on
   XML documents and data. It comes in two flavors: XQuery 1.0 and
   XSLT 2.0. Where possible, XPath 2.0 is is used in order to keep the
   function definitions as consistent as possible across the two
