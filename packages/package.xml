@@ -1,4 +1,4 @@
-<depify xmlns="https://github.com/xquery/depify" ts="2014-10-25T12:15:14.775Z"><dep path="/packages/master/xslt/2/Schematron/1.6/" name="schematron" repo-uri="http://www.schematron.com/tmp/iso-schematron-xslt2.zip" version="1.6"><title>ISO SCHEMATRON 2010</title><desc>ISO Schematron is a language for making assertion about the presence or absense
+<depify xmlns="https://github.com/xquery/depify" ts="2014-10-25T12:19:37.227Z"><dep path="/packages/master/xslt/2/saxon-ce/1.1/" name="saxon-ce" repo-uri="https://github.com/Saxonica/Saxon-CE.git" version="1.0"/><dep path="/packages/master/xslt/2/Schematron/1.6/" name="schematron" repo-uri="http://www.schematron.com/tmp/iso-schematron-xslt2.zip" version="1.6"><title>ISO SCHEMATRON 2010</title><desc>ISO Schematron is a language for making assertion about the presence or absense
     of patterns in XML documents. It is typically used for as a schema language, or
     to augment existing schema languages, and to check business rules. It is very
     powerful, yet quite simple: a developer only need know XPath and about five other
