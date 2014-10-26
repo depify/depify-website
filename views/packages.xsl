@@ -99,7 +99,7 @@
       </xsl:result-document>
        
       <xsl:result-document href="#footer-date" method="ixsl:replace-content">
-        packages last updated <xsl:value-of select="/packages:depify/@ts"/>
+        packages last updated <xsl:value-of select="/depify:packages/@ts"/>
       </xsl:result-document>
         
     </xsl:template>
