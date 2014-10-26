@@ -7,7 +7,7 @@
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns:wc="http://www.webcomposite.com/xslt"
     xmlns:fn="http://www.w3.org/2005/xpath-functions"
-    xmlns:depify="https://github.com/xquery/depify"
+    xmlns:depify="https://github.com/depify"
     exclude-result-prefixes="xs prop"
     extension-element-prefixes="ixsl"
     version="2.0">
@@ -30,7 +30,7 @@
       </tr>
     </thead>
   <tbody>     
-    <xsl:for-each select="/depify:depify/depify:dep">
+    <xsl:for-each select="/depify:packages/depify:depify">
       <xsl:sort select="substring-before(substring-after(@path,'/packages/master/'),'/')"/>
       
       <tr>
@@ -99,7 +99,7 @@
       </xsl:result-document>
        
       <xsl:result-document href="#footer-date" method="ixsl:replace-content">
-        packages last updated <xsl:value-of select="*:depify/@ts"/>
+        packages last updated <xsl:value-of select="/packages:depify/@ts"/>
       </xsl:result-document>
         
     </xsl:template>
