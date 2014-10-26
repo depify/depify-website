@@ -1,9 +1,0 @@
-sup { vertical-align: middle; font-size: 0.6em; }
-footer{ width:100%;text-align:right;link-color:leftffffff;float:right;color:#FFFFFF;background-color:#000000}
-
-table.sortable tbody tr:nth-child(2n) td {
-  background: #ffcccc;
-}
-table.sortable tbody tr:nth-child(2n+1) td {
-  background: #ccfffff;
-}

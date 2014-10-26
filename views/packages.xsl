@@ -12,39 +12,88 @@
     extension-element-prefixes="ixsl"
     version="2.0">
 
+   
     <xsl:template match="/" name="main">
 
       <xsl:result-document href="#packages" method="ixsl:replace-content">
-  <table cellpadding="0" cellspacing="0" border="1" width="100%" class="display" id="package-table">
+        
+  <table cellpadding="0" cellspacing="0" border="1" width="100%" id="package-table">
     <thead>
       <tr>
-        <th>type</th>
+        <th></th>
         <th>name</th>
+        <th>type</th>
         <th>version</th>
         <th>author</th>
         <th>description</th>
+        <th>link</th>
       </tr>
     </thead>
   <tbody>     
     <xsl:for-each select="/depify:depify/depify:dep">
+      <xsl:sort select="substring-before(substring-after(@path,'/packages/master/'),'/')"/>
+      
       <tr>
+        <xsl:choose>
+          <xsl:when test="fn:contains(@path,'/xslt/')">
+            <xsl:attribute name="style">background-color: #95A1C3;</xsl:attribute>
+          </xsl:when>
+          <xsl:when test="fn:contains(@path,'/xquery/')">
+            <xsl:attribute name="style">background-color: #91867E;</xsl:attribute>
+          </xsl:when>
+          <xsl:when test="fn:contains(@path,'/xproc/')">
+            <xsl:attribute name="style">background-color: #76A19E;</xsl:attribute>
+          </xsl:when>
+          <xsl:when test="fn:contains(@path,'/xml/')">
+            <xsl:attribute name="style">background-color: #C9C27F;</xsl:attribute>
+          </xsl:when>
+          <xsl:when test="fn:contains(@path,'/schema/')">
+            <xsl:attribute name="style">background-color: #C9C27F;</xsl:attribute>
+          </xsl:when>
+          <xsl:when test="fn:contains(@path,'/js/')">
+            <xsl:attribute name="style">background-color: #B2B2B2;</xsl:attribute>
+          </xsl:when>
+          <xsl:otherwise>
+          </xsl:otherwise>
+        </xsl:choose>
+        <td></td>
+        <td><xsl:value-of select="@name"/></td>
         <td><xsl:value-of select="substring-before(substring-after(@path,'/packages/master/'),'/')"/></td>
         
-        <td><xsl:value-of select="@name"/></td>
         <td><xsl:value-of select="@version"/></td>
         <td><xsl:value-of select="depify:author/@id"/></td>        
         <td><xsl:value-of select="depify:desc"/></td>        
+        <td>
+         <a href="{substring-before(@repo-uri,'.git')}/archive/master.zip">&#8627;download</a><br/>
+         <a href="{@repo-uri}">&#8627;go repo</a><br/>
+         <xsl:if test="depify:website"><a href="{depify:website}">&#8627; go web</a></xsl:if>
+       </td>        
       </tr>
+      
     </xsl:for-each>
   </tbody>
   </table>
+
   <script>
         $(document).ready(function() {
         $('#package-table').
         dataTable( {
+        columns": [
+         
+                "class":          'details-control',
+                "orderable":      false,
+                "data":           null,
+                "defaultContent": ''
+                },
+                { "data": "name" },
+            { "data": "type" },
+            { "data": "description" }
+        ]
         "bPaginate": false,
         "bScrollCollapse": true,
-        "bAutoWidth": true
+        "bAutoWidth": true,
+        "order":[[ 3, "name"]],
+        "displayLength": 25
         }); });
   </script>
       </xsl:result-document>
