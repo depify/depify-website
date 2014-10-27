@@ -12,15 +12,12 @@
     extension-element-prefixes="ixsl"
     version="2.0">
 
-   
+  
     <xsl:template match="/" name="main">
-
       <xsl:result-document href="#packages" method="ixsl:replace-content">
-        
-  <table cellpadding="0" cellspacing="0" border="1" width="100%" id="package-table">
+  <table id="package-table">
     <thead>
       <tr>
-        <th></th>
         <th>name</th>
         <th>type</th>
         <th>version</th>
@@ -56,7 +53,7 @@
           <xsl:otherwise>
           </xsl:otherwise>
         </xsl:choose>
-        <td></td>
+
         <td><xsl:value-of select="@name"/></td>
         <td><xsl:value-of select="substring-before(substring-after(@path,'/packages/master/'),'/')"/></td>
         
@@ -74,34 +71,8 @@
   </tbody>
   </table>
 
-  <script>
-        $(document).ready(function() {
-        $('#package-table').
-        dataTable( {
-        columns": [
-         
-                "class":          'details-control',
-                "orderable":      false,
-                "data":           null,
-                "defaultContent": ''
-                },
-                { "data": "name" },
-            { "data": "type" },
-            { "data": "description" }
-        ]
-        "bPaginate": false,
-        "bScrollCollapse": true,
-        "bAutoWidth": true,
-        "order":[[ 3, "name"]],
-        "displayLength": 25
-        }); });
-  </script>
       </xsl:result-document>
        
-      <xsl:result-document href="#footer-date" method="ixsl:replace-content">
-        packages last updated <xsl:value-of select="/depify:packages/@ts"/>
-      </xsl:result-document>
-        
     </xsl:template>
 
 
