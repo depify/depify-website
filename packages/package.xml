@@ -1,4 +1,4 @@
-<packages xmlns="https://github.com/depify" ts="2014-10-27T11:01:53.942Z"><depify path="/packages/master/xslt/2/Schematron/1.6/.depify.xml" version="1.6" repo-uri="http://www.schematron.com/tmp/iso-schematron-xslt2.zip" name="schematron">
+<packages xmlns="https://github.com/depify" ts="2014-10-27T11:16:27.465Z"><depify path="/packages/master/xslt/2/Schematron/1.6/.depify.xml" version="1.6" repo-uri="http://www.schematron.com/tmp/iso-schematron-xslt2.zip" name="schematron">
   <title>ISO SCHEMATRON 2010</title>
   <desc>ISO Schematron is a language for making assertion about the presence or absense
     of patterns in XML documents. It is typically used for as a schema language, or
@@ -60,7 +60,7 @@
   <license type="?"/>
   <author id="rwhitby">Rob Whitby</author>
   <website>https://github.com/robwhitby/xray</website>
-</depify><depify path="/packages/master/xquery/marklogic/rxq/1.0/.depify.xml" version="1.0.0" repo-uri="https://github.com/xquery/rxq.git" name="rxq">
+</depify><depify path="/packages/master/xquery/marklogic/rxq/1.0/.depify.xml" version="1.0" repo-uri="https://github.com/xquery/rxq.git" name="rxq">
 </depify><depify path="/packages/master/xquery/marklogic/roxy/1.0/.depify.xml" version="1.0" repo-uri="https://github.com/marklogic/roxy.git" name="roxy">
   <title>Roxy</title>
   <desc>Roxy (RObust XQuerY Framework) is a lightweight framework for quickly developing well-structured, 
