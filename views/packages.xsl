@@ -30,6 +30,7 @@
   <tbody>     
     <xsl:for-each select="/depify:packages/depify:depify">
       <xsl:sort select="substring-before(substring-after(@path,'/packages/master/'),'/')"/>
+      <xsl:sort select="@name"/>
       
       <tr>
         <xsl:choose>
@@ -59,7 +60,7 @@
         <td><xsl:value-of select="substring-before(substring-after(@path,'/packages/master/'),'/')"/></td>
         
         <td><xsl:value-of select="@version"/></td>
-        <td><xsl:value-of select="depify:author/@id"/></td>        
+        <td><a href="http://github.com/{depify:author[1]/@id}" target="_github"><xsl:value-of select="depify:author/@id"/></a></td>        
         <td><p><xsl:value-of select="depify:desc"/></p></td>        
         <td style="text-align:left">
           <core-item icon="file-download" label="download">
