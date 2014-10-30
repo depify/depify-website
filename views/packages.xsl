@@ -61,10 +61,19 @@
         <td><xsl:value-of select="depify:author/@id"/></td>        
         <td><xsl:value-of select="depify:desc"/></td>        
         <td>
-         <a href="{substring-before(@repo-uri,'.git')}/archive/master.zip">&#8627;download</a><br/>
-         <a href="{@repo-uri}">&#8627;go repo</a><br/>
-         <xsl:if test="depify:website"><a href="{depify:website}">&#8627; go web</a></xsl:if>
-       </td>        
+          <core-item icon="file-download" label="download">
+                   <a href="{substring-before(@repo-uri,'.git')}/archive/master.zip"/>
+          </core-item>
+          <core-item icon="bug-report" label="issue">
+                   <a href="{substring-before(@repo-uri,'.git')}/issues" target="_issues"/>
+          </core-item>
+          <core-item icon="launch" label="repo">
+            <a href="{@repo-uri}" target="_repo"/>
+          </core-item>
+          <core-item icon="launch" label="website">
+            <a href="{depify:website}" target="_website"/>
+          </core-item>
+        </td>        
       </tr>
       
     </xsl:for-each>
