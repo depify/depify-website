@@ -17,6 +17,7 @@
 <link rel="import" href="bower_components/core-item/core-item.html">
 <link rel="import" href="bower_components/core-icons/social-icons.html">
 <link rel="import" href="bower_components/core-field/core-field.html">
+<link rel="import" href="bower_components/github-button/github-button.html">
   
 <link rel="stylesheet" href="/lib/depify.css">
 
@@ -38,13 +39,10 @@
       <core-item icon="add-circle" label="Submit Package">
         <a href="https://github.com/depify/depify-packages" target="_submit"></a>
       </core-item>
-      <core-item icon="cloud-download" label="Download Depify Client">
+      <core-item icon="cloud-download" label="Download Depify">
         <a href="https://github.com/depify/depify-client" target="_client"></a>
       </core-item>
-      <core-item icon="post-twitter" label="Follow @depify">
-        <a href="https://twitter.com/depify" target="_twitter"></a>
-      </core-item>
-      <core-item icon="help" label="help">
+      <core-item icon="help" label="Help">
       </core-item>
     </core-menu>
   </core-header-panel>
@@ -62,8 +60,10 @@
  </div>
  
 
-<footer>
-  <span id="footer-date">packages last-updated </span>  |
+  <footer>
+    <div id="footer">
+      <span id="footer-date">last-updated </span>  |
+      </div>
 </footer>
 
 </core-scaffold>

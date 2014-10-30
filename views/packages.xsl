@@ -12,10 +12,14 @@
     extension-element-prefixes="ixsl"
     version="2.0">
 
+  <xsl:variable name="ts" select="/depify:packages/@ts"/>
   
-    <xsl:template match="/" name="main">
+  <xsl:template match="/" name="main">
+    <xsl:result-document href="#footer" method="ixsl:replace-content">
+       <github-button user="depify" repo="repo"></github-button> | <span id="footer-date">last-updated: <xsl:value-of select="$ts"/> </span>
+    </xsl:result-document>
+    
       <xsl:result-document href="#packages" method="ixsl:replace-content">
-
   <table id="package-table">
     <thead>
       <tr>
@@ -83,7 +87,8 @@
   </table>
 
       </xsl:result-document>
-       
+
+      
     </xsl:template>
 
 
