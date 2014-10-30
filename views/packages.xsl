@@ -15,6 +15,7 @@
   
     <xsl:template match="/" name="main">
       <xsl:result-document href="#packages" method="ixsl:replace-content">
+
   <table id="package-table">
     <thead>
       <tr>
@@ -23,7 +24,7 @@
         <th>version</th>
         <th>author</th>
         <th>description</th>
-        <th>link</th>
+        <th>action</th>
       </tr>
     </thead>
   <tbody>     
@@ -59,8 +60,8 @@
         
         <td><xsl:value-of select="@version"/></td>
         <td><xsl:value-of select="depify:author/@id"/></td>        
-        <td><xsl:value-of select="depify:desc"/></td>        
-        <td>
+        <td><p><xsl:value-of select="depify:desc"/></p></td>        
+        <td style="text-align:left">
           <core-item icon="file-download" label="download">
                    <a href="{substring-before(@repo-uri,'.git')}/archive/master.zip"/>
           </core-item>
