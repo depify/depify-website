@@ -37,6 +37,14 @@
     
   </xsl:template>
 
+    <xsl:template match="tr" mode="ixsl:onclick">
+      <xsl:result-document href="#packages" method="ixsl:replace-content">
+        <xsl:call-template name="display-search">
+        <xsl:with-param name="type" select="@id"/>
+      </xsl:call-template>
+    </xsl:result-document>
+    </xsl:template>    
+  
     <xsl:template match="core-item[@id='help']" mode="ixsl:onclick">
       <xsl:result-document href="#packages" method="ixsl:replace-content">
         <h1>Help</h1>
@@ -117,7 +125,7 @@
     <xsl:for-each select="ixsl:source()/depify:packages/depify:depify[matches(@path,$type,'i')]">
       <xsl:sort select="substring-before(substring-after(@path,'/packages/master/'),'/')"/>
       <xsl:sort select="@name"/>
-      <tr>
+      <tr id="{@name}">
         <xsl:choose>
           <xsl:when test="fn:contains(@path,'/xslt/')">
             <xsl:attribute name="style">background-color: #95A1C3;</xsl:attribute>
@@ -253,13 +261,19 @@
           </core-item>
         </td>        
       </tr>
-      
+      <tr>
+        <td colspan="6">
+          install: <input size="50" value="depify install {@name} {@version}"/> | 
+          remove: <input size="50" value="depify remove {@name} {@version}"/>
+        </td>
+      </tr>      
     </xsl:for-each>
   </tbody>
   </table>
     <xsl:result-document href="#type" method="ixsl:replace-content">
      <xsl:value-of select="$type"/>
     </xsl:result-document>
-    </xsl:template>    
+    </xsl:template>
+
 </xsl:transform>	
 
