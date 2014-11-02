@@ -9,6 +9,7 @@
 
 <!-- Web Components' Polyfill -->
 <script type="text/javascript" src="bower_components/platform/platform.js"></script>
+<link rel="import" href="bower_components/polymer/polymer.html">
 
 <link rel="import" href="bower_components/core-drawer-panel/core-drawer-panel.html">
 <link rel="import" href="bower_components/core-scaffold/core-scaffold.html">
@@ -17,7 +18,7 @@
 <link rel="import" href="bower_components/core-item/core-item.html">
 <link rel="import" href="bower_components/core-icons/social-icons.html">
 <link rel="import" href="bower_components/core-field/core-field.html">
-<link rel="import" href="bower_components/github-button/github-button.html">
+
   
 <link rel="stylesheet" href="/lib/depify.css">
 
@@ -29,30 +30,31 @@
   <core-header-panel navigation flex mode="seamed">
     <core-toolbar>DEPIFY</core-toolbar>
     <core-menu theme="core-light-theme">
-      <core-item icon="search" label="All Packages"></core-item>
-      <core-item icon="search" label="JS" color="red"></core-item>
-      <core-item icon="search" label="Schema"></core-item>
-      <core-item icon="search" label="XML"></core-item>
-      <core-item icon="search" label="XProc"></core-item>
-      <core-item icon="search" label="XQuery"></core-item>
-      <core-item icon="search" label="XSLT"></core-item>
+      <core-item id="all" icon="search" label="All Packages"></core-item>
+      <core-item id="js" icon="search" label="JS"></core-item>
+      <core-item id="schema" icon="search" label="Schema"></core-item>
+      <core-item id="xml" icon="search" label="XML"></core-item>
+      <core-item id="xproc" icon="search" label="XProc"></core-item>
+      <core-item id="xquery" icon="search" label="XQuery"></core-item>
+      <core-item id="xslt" icon="search" label="XSLT"></core-item>
       <core-item icon="add-circle" label="Submit Package">
         <a href="https://github.com/depify/depify-packages" target="_submit"></a>
       </core-item>
       <core-item icon="cloud-download" label="Download Depify">
         <a href="https://github.com/depify/depify-client" target="_client"></a>
       </core-item>
-      <core-item icon="help" label="Help">
+      <core-item id="help" icon="help" label="Help">
       </core-item>
     </core-menu>
   </core-header-panel>
-  <div tool>packages: [ all ]
-</div>
-  <core-field>
+  <div tool>packages: [ <span id="type">all</span> ]
+  </div>
+  
+  <!--core-field>
     <div class="icon"></div>
     <input placeholder="Search" flex>
     <icon></icon>
-  </core-field>    
+  </core-field-->    
 
   <div id="packages" style="background-color:#F6F6F6">
    <img style="display: block;margin-left: auto;margin-right: auto"

@@ -15,12 +15,80 @@
   <xsl:variable name="ts" select="/depify:packages/@ts"/>
   
   <xsl:template match="/" name="main">
+
     <xsl:result-document href="#footer" method="ixsl:replace-content">
-       <github-button user="depify" repo="repo"></github-button> | <span id="footer-date">last-updated: <xsl:value-of select="$ts"/> </span>
+      <span id="footer-date">last-updated: <xsl:value-of select="$ts"/> </span>
     </xsl:result-document>
     
+    <xsl:result-document href="#packages" method="ixsl:replace-content">
+      <xsl:call-template name="display"/>
+      </xsl:result-document>
+    </xsl:template>
+
+    <xsl:template match="core-item[@id='help']" mode="ixsl:onclick">
       <xsl:result-document href="#packages" method="ixsl:replace-content">
-  <table id="package-table">
+        <h1>Help</h1>
+    </xsl:result-document>
+    </xsl:template>    
+
+    <xsl:template match="core-item[@id='all']" mode="ixsl:onclick">
+    <xsl:result-document href="#packages" method="ixsl:replace-content">
+      <xsl:call-template name="display"/>
+      </xsl:result-document>
+    </xsl:template>
+    
+    <xsl:template match="core-item[@id='xproc']" mode="ixsl:onclick">
+    <xsl:result-document href="#packages" method="ixsl:replace-content">
+      <xsl:call-template name="display">
+            <xsl:with-param name="type">xproc</xsl:with-param>
+      </xsl:call-template>
+      </xsl:result-document>
+    </xsl:template>    
+
+    <xsl:template match="core-item[@id='xquery']" mode="ixsl:onclick">
+    <xsl:result-document href="#packages" method="ixsl:replace-content">
+      <xsl:call-template name="display">
+            <xsl:with-param name="type">xquery</xsl:with-param>
+      </xsl:call-template>
+      </xsl:result-document>
+    </xsl:template>
+    
+    <xsl:template match="core-item[@id='xslt']" mode="ixsl:onclick">
+    <xsl:result-document href="#packages" method="ixsl:replace-content">
+      <xsl:call-template name="display">
+            <xsl:with-param name="type">xslt</xsl:with-param>
+      </xsl:call-template>
+      </xsl:result-document>
+    </xsl:template>
+
+    <xsl:template match="core-item[@id='schema']" mode="ixsl:onclick">
+    <xsl:result-document href="#packages" method="ixsl:replace-content">
+      <xsl:call-template name="display">
+            <xsl:with-param name="type">schema</xsl:with-param>
+      </xsl:call-template>
+      </xsl:result-document>
+    </xsl:template>
+
+    <xsl:template match="core-item[@id='js']" mode="ixsl:onclick">
+    <xsl:result-document href="#packages" method="ixsl:replace-content">
+      <xsl:call-template name="display">
+            <xsl:with-param name="type">js</xsl:with-param>
+      </xsl:call-template>
+      </xsl:result-document>
+    </xsl:template>
+
+    <xsl:template match="core-item[@id='xml']" mode="ixsl:onclick">
+    <xsl:result-document href="#packages" method="ixsl:replace-content">
+      <xsl:call-template name="display">
+            <xsl:with-param name="type">xml</xsl:with-param>
+      </xsl:call-template>
+      </xsl:result-document>
+    </xsl:template>
+
+    
+    <xsl:template name="display" match="/depify:packages">
+      <xsl:param name="type">(xquery|xpath|schema|js|xml|xslt)</xsl:param>
+      <table id="package-table">
     <thead>
       <tr>
         <th>name</th>
@@ -32,10 +100,9 @@
       </tr>
     </thead>
   <tbody>     
-    <xsl:for-each select="/depify:packages/depify:depify">
+    <xsl:for-each select="ixsl:source()/depify:packages/depify:depify[matches(@path,$type)]">
       <xsl:sort select="substring-before(substring-after(@path,'/packages/master/'),'/')"/>
       <xsl:sort select="@name"/>
-      
       <tr>
         <xsl:choose>
           <xsl:when test="fn:contains(@path,'/xslt/')">
@@ -85,12 +152,11 @@
     </xsl:for-each>
   </tbody>
   </table>
-
-      </xsl:result-document>
-
-      
-    </xsl:template>
+    <xsl:result-document href="#type" method="ixsl:replace-content">
+     <xsl:value-of select="$type"/>
+    </xsl:result-document>
 
 
+  </xsl:template>  
 </xsl:transform>	
 
