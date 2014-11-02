@@ -30,9 +30,12 @@
     </xsl:result-document>
     
     <xsl:result-document href="#packages" method="ixsl:replace-content">
-      <xsl:call-template name="display"/>
-      </xsl:result-document>
-    </xsl:template>
+      <xsl:call-template name="display">
+        <xsl:with-param name="type">(xproc|xquery|xslt|schema|js|xml)</xsl:with-param>
+      </xsl:call-template>
+    </xsl:result-document>
+    
+  </xsl:template>
 
     <xsl:template match="core-item[@id='help']" mode="ixsl:onclick">
       <xsl:result-document href="#packages" method="ixsl:replace-content">
@@ -42,7 +45,9 @@
 
     <xsl:template match="core-item[@id='all']" mode="ixsl:onclick">
     <xsl:result-document href="#packages" method="ixsl:replace-content">
-      <xsl:call-template name="display"/>
+      <xsl:call-template name="display">
+        <xsl:with-param name="type">(xproc|xquery|xslt|schema|js|xml)</xsl:with-param>
+      </xsl:call-template>
       </xsl:result-document>
     </xsl:template>
     
@@ -96,7 +101,7 @@
 
     
     <xsl:template name="display" match="/depify:packages">
-      <xsl:param name="type">(xquery|xpath|schema|js|xml|xslt)</xsl:param>
+      <xsl:param name="type"/>
       <table id="package-table">
     <thead>
       <tr>
@@ -109,7 +114,7 @@
       </tr>
     </thead>
   <tbody>     
-    <xsl:for-each select="ixsl:source()/depify:packages/depify:depify[matches(@path,$type)]">
+    <xsl:for-each select="ixsl:source()/depify:packages/depify:depify[matches(@path,$type,'i')]">
       <xsl:sort select="substring-before(substring-after(@path,'/packages/master/'),'/')"/>
       <xsl:sort select="@name"/>
       <tr>
