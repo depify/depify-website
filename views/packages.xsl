@@ -180,7 +180,7 @@
       </tr>
     </thead>
   <tbody>     
-    <xsl:for-each select="ixsl:source()/depify:packages/depify:depify[matches(.,$type)]">
+    <xsl:for-each select="ixsl:source()/depify:packages/depify:depify[matches(.,$type,'i')]">
       <xsl:sort select="substring-before(substring-after(@path,'/packages/master/'),'/')"/>
       <xsl:sort select="@name"/>
       <tr>
