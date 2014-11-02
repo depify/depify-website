@@ -32,7 +32,7 @@ core-scaffold[mode=cover] .content {
     margin: 20px 100px 20px 0;
 }
 
-footer{ width:100%;text-align:right;link-color:ffffff;float:right;color:#FFFFFF;background-color:#000000}
+footer{ width:100%;text-align:right;visited-link-color:#ffffff;link-color:#ffffff;float:right;color:#FFFFFF;background-color:#000000}
 
 table a:link {
 	color: #666;
@@ -140,4 +140,5 @@ core-field {
     margin: 10px;
     height: 30px;
 }
+
 

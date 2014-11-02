@@ -26,7 +26,7 @@
   <xsl:template match="/" name="main">
   
     <xsl:result-document href="#footer" method="ixsl:replace-content">
-      <span id="footer-date"><a href="https://github.com/depify/depify-packages" target="_packages">last-updated</a>: <xsl:value-of select="$ts"/> </span>
+      <span id="footer-date">packages last-updated: <xsl:value-of select="$ts"/> </span>
     </xsl:result-document>
     
     <xsl:result-document href="#packages" method="ixsl:replace-content">
