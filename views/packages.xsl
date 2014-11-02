@@ -14,7 +14,7 @@
 
   <xsl:variable name="ts" select="/depify:packages/@ts"/>
 
-  <xsl:template match="input[@id='search-q']" mode="ixsl:onkeydown">
+  <xsl:template match="input[@id='search-q']" mode="ixsl:onkeyup">
      <xsl:variable name="q" select="normalize-space(ixsl:get(//input[@id='search-q'], 'value'))"/>
     <xsl:result-document href="#packages" method="ixsl:replace-content">
       <xsl:call-template name="display-search">
