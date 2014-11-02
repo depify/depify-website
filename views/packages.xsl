@@ -60,7 +60,7 @@
           </xsl:otherwise>
         </xsl:choose>
 
-        <td><xsl:value-of select="@name"/></td>
+        <td><b><xsl:value-of select="@name"/></b></td>
         <td><xsl:value-of select="substring-before(substring-after(@path,'/packages/master/'),'/')"/></td>
         
         <td><xsl:value-of select="@version"/></td>
