@@ -148,18 +148,38 @@
         <td><a href="http://github.com/{depify:author[1]/@id}" target="_github"><xsl:value-of select="depify:author/@id"/></a></td>        
         <td><p><xsl:value-of select="depify:desc"/></p></td>        
         <td style="text-align:left">
+          <xsl:choose>
+          <xsl:when test="contains(@repo-uri,'github.com')">
           <core-item icon="file-download" label="download">
                    <a href="{substring-before(@repo-uri,'.git')}/archive/master.zip"/>
           </core-item>
+          </xsl:when>
+          <xsl:otherwise>
+          <core-item icon="file-download" label="download">
+                   <a href="{@repo-uri}"/>
+          </core-item>            
+          </xsl:otherwise>
+          </xsl:choose>
+          <xsl:if test="contains(@repo-uri,'github.com')">
           <core-item icon="bug-report" label="issue">
                    <a href="{substring-before(@repo-uri,'.git')}/issues" target="_issues"/>
           </core-item>
+          </xsl:if>
+          <xsl:choose>
+          <xsl:when test="contains(@repo-uri,'github.com')">
           <core-item icon="launch" label="repo">
             <a href="{@repo-uri}" target="_repo"/>
           </core-item>
+          </xsl:when>
+          <xsl:otherwise>
+            
+          </xsl:otherwise>
+          </xsl:choose>
+          <xsl:if test="depify:website">
           <core-item icon="launch" label="website">
             <a href="{depify:website}" target="_website"/>
           </core-item>
+          </xsl:if>
         </td>        
       </tr>
       

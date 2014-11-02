@@ -9,6 +9,13 @@ body {
     font-family: sans-serif;
 }
 
+p {
+font-size: 1em;
+line-height: 1.25em;
+margin: 1.25em 0;
+text-align: justify;
+}
+
 core-scaffold {
     position: absolute;
     top: 0;
@@ -70,7 +77,7 @@ table {
 	box-shadow: 0 1px 2px #d1d1d1;
 }
 table th {
-	padding:15px 25px 15px 25px;
+	padding:5px 25px 15px 25px;
 	border:1px solid #fafafa;
 	border-bottom:1px solid #e0e0e0;
 
@@ -102,7 +109,7 @@ table td:first-child {
 	border-left: 0;
 }
 table td {
-	padding:8px;
+	padding:4px;
 	border-top: 1px solid #ffffff;
 	border-bottom:1px solid #e0e0e0;
 	border-left: 1px solid #e0e0e0;
