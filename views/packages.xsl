@@ -191,7 +191,18 @@
         </td>        
       </tr>
       
+      <tr>
+        <td colspan="6">
+          <a href="#" id="show_info">more info</a>
+          <div id="info" style="display:none">
+          install: <input size="50" value="depify install {@name} {@version}"/> | 
+          remove: <input size="50" value="depify remove {@name} {@version}"/>
+          </div>
+        </td>
+      </tr>      
+  
     </xsl:for-each>
+    
   </tbody>
   </table>
     <xsl:result-document href="#type" method="ixsl:replace-content">
@@ -199,6 +210,15 @@
     </xsl:result-document>
     </xsl:template>
 
+    <xsl:template match="a[@id eq 'show_info']" mode="ixsl:onclick">
+      
+    </xsl:template>
+
+    <xsl:template match="div[@id eq 'info']">
+         <xsl:variable name="style" select="if (@style:display eq 'block') then 'hidden' else 'block'  "/>
+         <ixsl:set-attribute name="style:display" select="$style"/>
+    </xsl:template>
+    
     <xsl:template name="display-search" match="/depify:packages">
       <xsl:param name="type">(xquery|xpath|schema|js|xml|xslt)</xsl:param>
       <table id="package-table">
@@ -261,12 +281,6 @@
           </core-item>
         </td>        
       </tr>
-      <tr>
-        <td colspan="6">
-          install: <input size="50" value="depify install {@name} {@version}"/> | 
-          remove: <input size="50" value="depify remove {@name} {@version}"/>
-        </td>
-      </tr>      
     </xsl:for-each>
   </tbody>
   </table>
