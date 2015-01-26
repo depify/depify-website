@@ -39,7 +39,18 @@ core-scaffold[mode=cover] .content {
     margin: 20px 100px 20px 0;
 }
 
-footer{ width:100%;text-align:right;visited-link-color:#ffffff;link-color:#ffffff;float:right;color:#FFFFFF;background-color:#000000}
+footer{
+    width:97%;
+    text-align:right;
+    visited-link-color:#ffffff;
+    link-color:#FFFFF;
+    float:right;
+    margin-right:20px;
+    margin-left:20px;
+    margin-bottom:10px;
+    color:#000;
+    background-color:#F6F6F6;
+}
 
 table a:link {
 	color: #666;
@@ -148,4 +159,32 @@ core-field {
     height: 30px;
 }
 
-
+#wrapper-package {
+  margin: 7px;
+}
+#content-package {
+    text-align:left;
+    font-family:
+    Baskerville,
+    Times
+        'Times New Roman'
+        sans serif;
+	font-size:20px;
+    float: left;
+    width: 80%;
+    background-color: #FFF;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#content-package > h1{
+    margin-top:-2px;
+    text-decoration: underline;
+}
+#sidebar-package {
+  float: right;
+  width: 17%%;
+  background-color: #FFF;
+}
+#cleared {
+  clear: both;
+}

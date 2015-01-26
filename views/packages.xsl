@@ -39,7 +39,7 @@
 
     <xsl:template match="tr" mode="ixsl:onclick">
       <xsl:result-document href="#packages" method="ixsl:replace-content">
-        <xsl:call-template name="display-search">
+        <xsl:call-template name="display-info">
         <xsl:with-param name="type" select="@id"/>
       </xsl:call-template>
     </xsl:result-document>
@@ -191,16 +191,6 @@
         </td>        
       </tr>
       
-      <tr>
-        <td colspan="6">
-          <a href="#" id="show_info">more info</a>
-          <div id="info" style="display:none">
-          install: <input size="50" value="depify install {@name} {@version}"/> | 
-          remove: <input size="50" value="depify remove {@name} {@version}"/>
-          </div>
-        </td>
-      </tr>      
-  
     </xsl:for-each>
     
   </tbody>
@@ -218,13 +208,13 @@
          <xsl:variable name="style" select="if (@style:display eq 'block') then 'hidden' else 'block'  "/>
          <ixsl:set-attribute name="style:display" select="$style"/>
     </xsl:template>
-    
+        
     <xsl:template name="display-search" match="/depify:packages">
       <xsl:param name="type">(xquery|xpath|schema|js|xml|xslt)</xsl:param>
       <table id="package-table">
     <thead>
       <tr>
-        <th>name</th>
+        <th>name1</th>
         <th>type</th>
         <th>version</th>
         <th>author</th>
@@ -284,10 +274,45 @@
     </xsl:for-each>
   </tbody>
   </table>
-    <xsl:result-document href="#type" method="ixsl:replace-content">
+      
+    <!--xsl:result-document href="#type" method="ixsl:replace-content">
      <xsl:value-of select="$type"/>
-    </xsl:result-document>
+   </xsl:result-document-->
+   
     </xsl:template>
 
+    <xsl:template name="display-info" match="/depify:packages">
+      <xsl:param name="type"></xsl:param>
+      <xsl:param name="package" select="ixsl:source()/depify:packages/depify:depify[matches(@name,$type,'i')]"/>
+        <div id="wrapper-package">
+          <div id="content-package">
+            <h1><xsl:value-of select="$package/@name"/></h1>
+            <span><xsl:value-of select="substring-before(substring-after($package/@path,'/packages/master/'),'/')"/></span> | 
+            <xsl:value-of select="$package/@version"/> | 
+            <a href="http://github.com/{$package/depify:author[1]/@id}"
+               target="_github"><xsl:value-of select="$package/depify:author/@id"/></a>
+            <p><xsl:value-of select="$package/depify:desc"/></p>
+          </div>
+          <div id="sidebar-package">
+            <core-list>
+              <core-item icon="file-download" label="download">
+                <a href="{substring-before($package/@repo-uri,'.git')}/archive/master.zip"/>
+              </core-item>
+              <core-item icon="bug-report" label="issue">
+                <a href="{substring-before($package/@repo-uri,'.git')}/issues" target="_issues"/>
+              </core-item>
+              <core-item icon="launch" label="repo">
+                <a href="{$package/@repo-uri}" target="_repo"/>
+              </core-item>
+              <core-item icon="launch" label="website">
+                <a href="{$package/depify:website}" target="_website"/>
+              </core-item>
+            </core-list>
+          </div>
+          <div id="cleared"></div>
+        </div>
+
+    </xsl:template>
+    
 </xsl:transform>	
 
