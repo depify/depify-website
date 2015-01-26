@@ -58,56 +58,18 @@
       </xsl:call-template>
       </xsl:result-document>
     </xsl:template>
-    
-    <xsl:template match="core-item[@id='xproc']" mode="ixsl:onclick">
-    <xsl:result-document href="#packages" method="ixsl:replace-content">
+        
+    <xsl:template match="core-item" mode="ixsl:onclick">
+      <xsl:variable name="event" select="ixsl:event()"/>
+      <xsl:result-document href="#packages" method="ixsl:replace-content">
       <xsl:call-template name="display">
-            <xsl:with-param name="type">xproc</xsl:with-param>
-      </xsl:call-template>
-      </xsl:result-document>
-    </xsl:template>    
-
-    <xsl:template match="core-item[@id='xquery']" mode="ixsl:onclick">
-    <xsl:result-document href="#packages" method="ixsl:replace-content">
-      <xsl:call-template name="display">
-            <xsl:with-param name="type">xquery</xsl:with-param>
-      </xsl:call-template>
-      </xsl:result-document>
-    </xsl:template>
-    
-    <xsl:template match="core-item[@id='xslt']" mode="ixsl:onclick">
-    <xsl:result-document href="#packages" method="ixsl:replace-content">
-      <xsl:call-template name="display">
-            <xsl:with-param name="type">xslt</xsl:with-param>
+        <xsl:with-param name="type">
+          <xsl:value-of select="ixsl:get($event,'target.id')"/>
+        </xsl:with-param>
       </xsl:call-template>
       </xsl:result-document>
     </xsl:template>
 
-    <xsl:template match="core-item[@id='schema']" mode="ixsl:onclick">
-    <xsl:result-document href="#packages" method="ixsl:replace-content">
-      <xsl:call-template name="display">
-            <xsl:with-param name="type">schema</xsl:with-param>
-      </xsl:call-template>
-      </xsl:result-document>
-    </xsl:template>
-
-    <xsl:template match="core-item[@id='js']" mode="ixsl:onclick">
-    <xsl:result-document href="#packages" method="ixsl:replace-content">
-      <xsl:call-template name="display">
-            <xsl:with-param name="type">js</xsl:with-param>
-      </xsl:call-template>
-      </xsl:result-document>
-    </xsl:template>
-
-    <xsl:template match="core-item[@id='xml']" mode="ixsl:onclick">
-    <xsl:result-document href="#packages" method="ixsl:replace-content">
-      <xsl:call-template name="display">
-            <xsl:with-param name="type">xml</xsl:with-param>
-      </xsl:call-template>
-      </xsl:result-document>
-    </xsl:template>
-
-    
     <xsl:template name="display" match="/depify:packages">
       <xsl:param name="type"/>
       <table id="package-table">

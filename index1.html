@@ -7,7 +7,7 @@
 
   <meta name="description" content="A layout example that shows off a responsive product landing page.">
 
-  <title>DEPIFY</title>
+  <title>depify</title>
 
   <script type="text/javascript" src="bower_components/platform/platform.js"></script>
   <link rel="import" href="bower_components/polymer/polymer.html">
@@ -31,10 +31,10 @@
   <core-header-panel navigation flex mode="seamed">
 
     <core-toolbar>
-        <a style="color:#24537e;text-decoration: none;"href="/" target="_submit">DEPIFY</a>
+        <a href="/" target="_submit">depify</a>
     </core-toolbar>
     
-    <core-menu theme="core-light-theme">
+    <core-menu theme="core-light-theme" selected="0">
       <core-item id="all" icon="search" label="All Packages"></core-item>
       <core-item id="js" icon="search" label="JS"></core-item>
       <core-item id="schema" icon="search" label="Schema"></core-item>
@@ -53,16 +53,16 @@
     </core-menu>
   </core-header-panel>
   
-  <div tool>packages: [ <span id="type">all</span> ]
-    <div style="position: absolute;top: 7px;right: 20px;background-color:#ffffff">
+  <div tool>
+ 
       <core-field icon="search">
         <input id="search-q" size="50" placeholder="Search packages" flex>
         <icon></icon>
       </core-field>
-    </div>
+    
   </div>
 
-  <div id="packages" style="text-align: center;background-color:#F6F6F6"><br/>
+  <div id="packages"><br/>
    updating package list <img style="display: block;margin-left: auto;margin-right: auto"
         src="images/loading.gif"/><br/>
  </div>
