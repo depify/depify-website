@@ -44,7 +44,6 @@ core-scaffold {
     padding: 20px;
 }
 
-
 /* some default styles for mode="cover" on core-scaffold */
 core-scaffold[mode=cover]::shadow core-header-panel::shadow #mainContainer {
     left: 120px;
@@ -68,7 +67,7 @@ footer{
     margin-left:20px;
     margin-bottom:10px;
     color:#000;
-    background-color:#ffffff;
+    background-color:#99999;
 }
 
 table a:link {
@@ -89,8 +88,9 @@ table a:hover {
 table {
 	font-size:20px;
 	background:#eaebec;
-	margin:20px;
+	margin:0px;
 	border:#ccc 1px solid;
+    width: 100%; 
 }
 table th {
 	padding:5px 25px 15px 25px;

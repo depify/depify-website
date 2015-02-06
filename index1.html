@@ -1,16 +1,13 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-
-  <meta name="description" content="A layout example that shows off a responsive product landing page.">
-
   <title>depify</title>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="description" content="A layout example that shows off a responsive product landing page.">
   <script type="text/javascript" src="bower_components/platform/platform.js"></script>
   <link rel="import" href="bower_components/polymer/polymer.html">
+  <link rel="import" href="bower_components/core-overlay/core-overlay.html">
   <link rel="import" href="bower_components/core-drawer-panel/core-drawer-panel.html">
   <link rel="import" href="bower_components/core-scaffold/core-scaffold.html">
   <link rel="import" href="bower_components/core-header-panel/core-header-panel.html">
@@ -20,21 +17,21 @@
   <link rel="import" href="bower_component/core-collapse/core-collapse.html">
   <link rel="import" href="bower_component/core-selector/core-selector.html">
   <link rel="import" href="bower_components/core-item/core-list.html">
-
   <link rel="stylesheet" href="/lib/depify.css">
-
   <script type="text/javascript" language="javascript" src="/lib/Saxonce/Saxonce.nocache.js">&#160;</script>
   <script type="application/xslt+xml" language="xslt2.0" src="/views/packages.xsl" data-source="/packages/packages.xml" data-initial-template="main">&#160;</script>
 </head>
-<body>
-<core-scaffold>
-  <core-header-panel navigation flex mode="seamed">
 
+<body>
+ <core-scaffold>
+  <core-header-panel navigation flex mode="seamed">
     <core-toolbar>
         <a href="/" target="_submit">depify</a>
     </core-toolbar>
-    
-    <core-menu theme="core-light-theme" selected="0">
+    <core-menu selected="0">
+      <core-item icon="launch" label="Start using depify">
+        <a href="https://github.com/depify/depify-client" target="_client"></a>
+      </core-item>
       <core-item id="all" icon="search" label="All Packages"></core-item>
       <core-item id="js" icon="search" label="JS"></core-item>
       <core-item id="schema" icon="search" label="Schema"></core-item>
@@ -45,34 +42,30 @@
       <core-item icon="add-circle" label="Submit Package">
         <a href="https://github.com/depify/depify-packages/tree/master/packages" target="_submit"></a>
       </core-item>
-      <core-item icon="launch" label="Get Started">
-        <a href="https://github.com/depify/depify-client" target="_client"></a>
-      </core-item>
       <core-item id="help" icon="help" label="Help / About / FAQ">
       </core-item>
     </core-menu>
   </core-header-panel>
   
   <div tool>
- 
       <core-field icon="search">
-        <input id="search-q" size="50" placeholder="Search packages" flex>
+        <input id="search-q" size="50" placeholder="Search packages">
         <icon></icon>
       </core-field>
-    
-  </div>
 
-  <div id="packages"><br/>
+  </div>
+      <span id="footer-date">last-updated </span>  |
+
+  <div fit id="packages"><br/>
    updating package list <img style="display: block;margin-left: auto;margin-right: auto"
         src="images/loading.gif"/><br/>
  </div>
 
   <footer>
     <div id="footer">
-      <span id="footer-date">last-updated </span>  |
+test
     </div>
   </footer>
 </core-scaffold>
-
 </body>
 </html>
