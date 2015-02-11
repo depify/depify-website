@@ -1,4 +1,4 @@
-<packages xmlns="https://github.com/depify" ts="2015-02-11T13:31:27.638Z"><depify path="/packages/master/xslt/2/Schematron/1.6/.depify.xml" version="1.6" repo-uri="http://www.schematron.com/tmp/iso-schematron-xslt2.zip" name="schematron">
+<packages xmlns="https://github.com/depify" ts="2015-02-11T18:44:25.599Z"><depify path="/packages/master/xslt/2/Schematron/1.6/.depify.xml" version="1.6" repo-uri="http://www.schematron.com/tmp/iso-schematron-xslt2.zip" name="schematron">
   <title>ISO SCHEMATRON 2010</title>
   <desc>ISO Schematron is a language for making assertion about the presence or absense
     of patterns in XML documents. It is typically used for as a schema language, or
@@ -171,9 +171,7 @@
    <author id="vojtechtoman">Vojtech Toman</author>
    <website>https://github.com/vojtechtoman/xprocdoc</website>
    <xproc version="1.0">
-      <prefix>xd</prefix>
-      <namespace>http://github.com/vojtechtoman/xprocdoc</namespace>
-      <uri>xprocdoc.xpl</uri>
+      <catalog name="urn:depify:xproc" uri="xprocdoc-master/xprocdoc.xpl"/>
    </xproc>
 </depify><depify path="/packages/master/xproc/1/ml-xproc-library/1.0/.depify.xml" version="1.0" repo-uri="https://github.com/philipfennell/xproc-libraries" name="ml-xproc-library">
  <title>ML XProc Libraries</title>
