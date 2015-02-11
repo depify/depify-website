@@ -88,6 +88,7 @@
       <xsl:sort select="substring-before(substring-after(@path,'/packages/master/'),'/')"/>
       <xsl:sort select="@name"/>
       <tr id="{@name}">
+        <td style="text-align:center;">
         <xsl:choose>
           <xsl:when test="fn:contains(@path,'/xslt/')">
             <xsl:attribute name="style">background-color: #95A1C3;</xsl:attribute>
@@ -110,7 +111,7 @@
           <xsl:otherwise>
           </xsl:otherwise>
         </xsl:choose>
-        <td style="text-align:center;"><xsl:value-of select="substring-before(substring-after(@path,'/packages/master/'),'/')"/></td>
+        <xsl:value-of select="substring-before(substring-after(@path,'/packages/master/'),'/')"/></td>
         
         <td><span style="padding-left:20px;font-size:1.2em;"><b><xsl:value-of select="@name"/></b> <sup style="margin-left:5px;font-size:.6em;">[<xsl:value-of select="@version"/>]</sup></span></td>
 
@@ -183,6 +184,7 @@
       <xsl:sort select="substring-before(substring-after(@path,'/packages/master/'),'/')"/>
       <xsl:sort select="@name"/>
       <tr id="{@name}">
+        <td style="text-align:center;">
         <xsl:choose>
           <xsl:when test="fn:contains(@path,'/xslt/')">
             <xsl:attribute name="style">background-color: #95A1C3;</xsl:attribute>
@@ -205,7 +207,7 @@
           <xsl:otherwise>
           </xsl:otherwise>
         </xsl:choose>
-        <td style="text-align:center;"><xsl:value-of select="substring-before(substring-after(@path,'/packages/master/'),'/')"/></td>
+        <xsl:value-of select="substring-before(substring-after(@path,'/packages/master/'),'/')"/></td>
         
         <td><b style="padding-left:20px;font-size:1.2em;"><xsl:value-of select="@name"/></b> <sup style="margin-left:5px;font-size:.6em;">[<xsl:value-of select="@version"/>]</sup></td>
 
