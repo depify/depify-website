@@ -1,4 +1,4 @@
-<packages xmlns="https://github.com/depify" ts="2015-02-18T18:58:09.553Z"><depify path="/packages/master/xslt/2/Schematron/1.6/.depify.xml" version="1.6" repo-uri="http://www.schematron.com/tmp/iso-schematron-xslt2.zip" name="schematron">
+<packages xmlns="https://github.com/depify" ts="2015-02-18T19:34:33.063Z"><depify path="/packages/master/xslt/2/Schematron/1.6/.depify.xml" version="1.6" repo-uri="http://www.schematron.com/tmp/iso-schematron-xslt2.zip" name="schematron">
   <title>ISO SCHEMATRON 2010</title>
   <desc>ISO Schematron is a language for making assertion about the presence or absense
     of patterns in XML documents. It is typically used for as a schema language, or
@@ -154,7 +154,7 @@
    <namespace>http://www.functx.com</namespace>
    <uri>functx.xq</uri>
  </xquery>
-</depify><depify path="/packages/master/xproc/xmlcalabash/example/1.0/.depify.xml" repo-uri="https://github.com/xquery/calabash-java-step-example/releases/download/v1.0/xmlcalabash1-ext.jar.zip" version="1.0" name="xmlcalabash1-ext">
+</depify><depify path="/packages/master/xproc/xmlcalabash/example/1.0/.depify.xml" repo-uri="https://github.com/xquery/calabash-java-step-example" version="1.0" name="xmlcalabash1-ext">
    <title>xmlcalabash1-ext-</title>
    <desc>test of xmlcalabash java custom step.</desc>
    <license type="?"/>
