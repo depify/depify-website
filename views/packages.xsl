@@ -119,32 +119,28 @@
         </td>        
         <td style="text-align:left;margin-left:5px">
           <xsl:choose>
-          <xsl:when test="contains(@repo-uri,'github.com')">
-          <core-item icon="file-download" label="download">
-                   <a href="{substring-before(@repo-uri,'.git')}/archive/master.zip"/>
+          <xsl:when test="ends-with(@repo-uri,'.zip')">
+            <core-item icon="file-download" label="download">
+              <a href="{@repo-uri}" target="_download"/>
           </core-item>
           </xsl:when>
           <xsl:otherwise>
-          <core-item icon="file-download" label="download">
-                   <a href="{@repo-uri}"/>
-          </core-item>            
+            <core-item icon="file-download" label="download">
+              <a href="{@repo-uri}/releases/latest" target="download"/>
+            </core-item>
           </xsl:otherwise>
           </xsl:choose>
           <xsl:if test="contains(@repo-uri,'github.com')">
           <core-item icon="bug-report" label="issue">
-                   <a href="{substring-before(@repo-uri,'.git')}/issues" target="_issues"/>
+                   <a href="{@repo-uri}/issues" target="_issues"/>
           </core-item>
           </xsl:if>
-          <xsl:choose>
-          <xsl:when test="contains(@repo-uri,'github.com')">
+          <xsl:if test="not(ends-with(@repo-uri,'.zip'))">
           <core-item icon="launch" label="repo">
-            <a href="{@repo-uri}" target="_repo"/>
+            <a href="{@repo-uri}" target="_website"/>
           </core-item>
-          </xsl:when>
-          <xsl:otherwise>
-            
-          </xsl:otherwise>
-          </xsl:choose>
+          </xsl:if>
+
           <xsl:if test="depify:website">
           <core-item icon="launch" label="website">
             <a href="{depify:website}" target="_website"/>
@@ -180,7 +176,7 @@
       </tr>
     </thead>
   <tbody>     
-    <xsl:for-each select="ixsl:source()/depify:packages/depify:depify[matches(@path,$type,'i')]">
+    <xsl:for-each select="ixsl:source()/depify:packages/depify:depify[matches(.,$type,'i')]">
       <xsl:sort select="substring-before(substring-after(@path,'/packages/master/'),'/')"/>
       <xsl:sort select="@name"/>
       <tr id="{@name}">
@@ -212,41 +208,37 @@
         <td><span style="padding-left:20px;font-size:1.2em;"><b><xsl:value-of select="@name"/></b> <sup style="margin-left:5px;font-size:.6em;"><xsl:value-of select="@version"/></sup></span>
 
         <p style="margin:20px;font-size: 0.8em;"><xsl:value-of select="depify:desc"/> | <i><xsl:value-of select="depify:author"/></i></p></td>        
-        
-        <td style="text-align:left">
+
+                <td style="text-align:left;margin-left:5px">
           <xsl:choose>
-          <xsl:when test="contains(@repo-uri,'github.com')">
-          <core-item icon="file-download" label="download">
-                   <a href="{substring-before(@repo-uri,'.git')}/archive/master.zip"/>
+          <xsl:when test="ends-with(@repo-uri,'.zip')">
+            <core-item icon="file-download" label="download">
+              <a href="{@repo-uri}" target="_download"/>
           </core-item>
           </xsl:when>
           <xsl:otherwise>
-          <core-item icon="file-download" label="download">
-                   <a href="{@repo-uri}"/>
-          </core-item>            
+            <core-item icon="file-download" label="download">
+              <a href="{@repo-uri}/releases/latest" target="download"/>
+            </core-item>
           </xsl:otherwise>
           </xsl:choose>
           <xsl:if test="contains(@repo-uri,'github.com')">
           <core-item icon="bug-report" label="issue">
-                   <a href="{substring-before(@repo-uri,'.git')}/issues" target="_issues"/>
+                   <a href="{@repo-uri}/issues" target="_issues"/>
           </core-item>
           </xsl:if>
-          <xsl:choose>
-          <xsl:when test="contains(@repo-uri,'github.com')">
+          <xsl:if test="not(ends-with(@repo-uri,'.zip'))">
           <core-item icon="launch" label="repo">
-            <a href="{@repo-uri}" target="_repo"/>
+            <a href="{@repo-uri}" target="_website"/>
           </core-item>
-          </xsl:when>
-          <xsl:otherwise>
-            
-          </xsl:otherwise>
-          </xsl:choose>
+          </xsl:if>
+
           <xsl:if test="depify:website">
           <core-item icon="launch" label="website">
             <a href="{depify:website}" target="_website"/>
           </core-item>
           </xsl:if>
-        </td>        
+       </td>         
       </tr>
       
     </xsl:for-each>
