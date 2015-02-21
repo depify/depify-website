@@ -1,4 +1,4 @@
-<packages xmlns="https://github.com/depify" ts="2015-02-21T15:47:30.345Z"><depify path="/packages/master/xslt/2/Schematron/1.6/.depify.xml" version="1.6" repo-uri="http://www.schematron.com/tmp/iso-schematron-xslt2.zip" name="schematron">
+<packages xmlns="https://github.com/depify" ts="2015-02-21T17:24:10.599Z"><depify path="/packages/master/xslt/2/Schematron/1.6/.depify.xml" version="1.6" repo-uri="http://www.schematron.com/tmp/iso-schematron-xslt2.zip" name="schematron">
   <title>ISO SCHEMATRON 2010</title>
   <desc>ISO Schematron is a language for making assertion about the presence or absense
     of patterns in XML documents. It is typically used for as a schema language, or
@@ -53,19 +53,19 @@
    <namespace>http://www.functx.com</namespace>
    <uri>functx.xsl</uri>
  </xslt>
-</depify><depify path="/packages/master/xquery/marklogic/xray/1.0/.depify.xml" version="1.0" repo-uri="https://github.com/robwhitby/xray.git" name="xray">
+</depify><depify path="/packages/master/xquery/marklogic/xray/1.0/.depify.xml" version="1.0" repo-uri="https://github.com/robwhitby/xray" name="xray">
   <title>xray</title>
   <desc>xray is a framework for writing XQuery unit tests on MarkLogic
   Server.</desc>
   <license type="?"/>
   <author id="rwhitby">Rob Whitby</author>
   <website>https://github.com/robwhitby/xray</website>
-</depify><depify path="/packages/master/xquery/marklogic/rxq/1.0/.depify.xml" version="1.0" repo-uri="https://github.com/xquery/rxq.git" name="rxq">
+</depify><depify path="/packages/master/xquery/marklogic/rxq/1.0/.depify.xml" version="1.0" repo-uri="https://github.com/xquery/rxq" name="rxq">
   <title>rxq</title>
   <desc>Use RXQ to build MVC/RESTful apps with MarkLogic XQuery.</desc>
   <license type="apachev2"/>
   <author id="xquery">Jim Fuller</author>
-</depify><depify path="/packages/master/xquery/3/xqueryparser.xq/1.0/.depify.xml" repo-uri="https://github.com/jpcs/xqueryparser.xq.git" version="1.0" name="xqueryparser.xq">
+</depify><depify path="/packages/master/xquery/3/xqueryparser.xq/1.0/.depify.xml" repo-uri="https://github.com/jpcs/xqueryparser.xq" version="1.0" name="xqueryparser.xq">
    <title>xqueryparser.xq</title>
    <desc>A parser for XQuery 3.0 and MarkLogic extensions.</desc>
    <license type="APLV2.0">
@@ -78,7 +78,7 @@
       <namespace>http://github.com/jpcs/xqueryparser.xq</namespace>
       <uri>xqueryparser.xq</uri>
    </xquery>
-</depify><depify path="/packages/master/xquery/3/transform.xq/1.0/.depify.xml" repo-uri="https://github.com/jpcs/transform.xq.git" version="1.0" name="transform.xq">
+</depify><depify path="/packages/master/xquery/3/transform.xq/1.0/.depify.xml" repo-uri="https://github.com/jpcs/transform.xq" version="1.0" name="transform.xq">
    <title>transform.xq</title>
    <desc>An extensible transformation library for XQuery 3.0.</desc>
    <license type="APLV2.0">
@@ -91,8 +91,7 @@
       <namespace>http://snelson.org.uk/functions/transform</namespace>
       <uri>transform.xq</uri>
    </xquery>
-   <depify name="rbtree.xq" version="1.0" repo-uri="https://github.com/jpcs/rbtree.xq.git"/>
-</depify><depify path="/packages/master/xquery/3/rbtree.xq/1.0/.depify.xml" repo-uri="https://github.com/jpcs/rbtree.xq.git" version="1.0" name="rbtree.xq">
+</depify><depify path="/packages/master/xquery/3/rbtree.xq/1.0/.depify.xml" repo-uri="https://github.com/jpcs/rbtree.xq" version="1.0" name="rbtree.xq">
   <title>rbtree.xq</title>
   <desc>An implementation of a red/black tree built using XQuery 3.0 higher order functions, and an associative map library built on top of it..</desc>
   <license type="APLV2.0">
@@ -125,7 +124,7 @@
     <namespace>http://snelson.org.uk/functions/functional</namespace>
     <uri>functional.xq</uri>
   </xquery>
-</depify><depify path="/packages/master/xquery/3/data.xq/1.0/.depify.xml" repo-uri="https://github.com/jpcs/data.xq.git" version="1.0" name="data.xq">
+</depify><depify path="/packages/master/xquery/3/data.xq/1.0/.depify.xml" repo-uri="https://github.com/jpcs/data.xq" version="1.0" name="data.xq">
    <title>xqueryparser.xq</title>
    <desc>An XQuery 3.0 library for defining algebraic data types, and performing structural pattern matching on them..</desc>
    <license type="APLV2.0">
@@ -183,7 +182,7 @@
    <xproc version="1.0">
       <catalog name="urn:depify:xproc" uri="xprocdoc-master/xprocdoc.xpl"/>
    </xproc>
-</depify><depify path="/packages/master/schema/relaxng/1/xslt-relax-ng/1.0/.depify.xml" repo-uri="https://github.com/ndw/xslt-relax-ng.git" version="1.0" name="xslt-relax-ng">
+</depify><depify path="/packages/master/schema/relaxng/1/xslt-relax-ng/1.0/.depify.xml" repo-uri="https://github.com/ndw/xslt-relax-ng" version="1.0" name="xslt-relax-ng">
  <title>RelaxNG schemas for XSLT 1 &amp; XSLT 2</title>
   <desc>
     This project provides RELAX NG grammars for XSLT stylesheets. Because stylesheets are required to have a version number, it's straightforward for a RELAX NG validator to choose between the xslt10.rnc and xslt20.rnc grammars.
