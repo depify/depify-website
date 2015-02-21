@@ -1,4 +1,4 @@
-<packages xmlns="https://github.com/depify" ts="2015-02-21T18:39:03.374Z"><depify path="/packages/master/xslt/2/Schematron/1.6/.depify.xml" version="1.6" repo-uri="http://www.schematron.com/tmp/iso-schematron-xslt2.zip" name="schematron">
+<packages xmlns="https://github.com/depify" ts="2015-02-21T18:49:48.189Z"><depify path="/packages/master/xslt/2/Schematron/1.6/.depify.xml" version="1.6" repo-uri="http://www.schematron.com/tmp/iso-schematron-xslt2.zip" name="schematron">
   <title>ISO SCHEMATRON 2010</title>
   <desc>ISO Schematron is a language for making assertion about the presence or absense
     of patterns in XML documents. It is typically used for as a schema language, or
@@ -53,7 +53,7 @@
    <namespace>http://www.functx.com</namespace>
    <uri>functx.xsl</uri>
  </xslt>
-</depify><depify path="/packages/master/xquery/marklogic/xray/1.0/.depify.xml" version="1.0" repo-uri="https://github.com/robwhitby/xray" name="xray">
+</depify><depify path="/packages/master/xquery/marklogic/xray/v1.0/.depify.xml" version="1.0" repo-uri="https://github.com/robwhitby/xray" name="xray">
   <title>xray</title>
   <desc>xray is a framework for writing XQuery unit tests on MarkLogic
   Server.</desc>
@@ -179,7 +179,7 @@
    <xproc version="1.0">     
      <catalog name="urn:example-library" jar="example-library-ext.jar" uri="/example-library.xpl"/>
    </xproc>
-</depify><depify path="/packages/master/xproc/1/xprocspec/1.1.0/.depify.xml" repo-uri="https://github.com/daisy/xprocspec" version="v1.1.0" name="xprocspec">
+</depify><depify path="/packages/master/xproc/1/xprocspec/v1.1.0/.depify.xml" repo-uri="https://github.com/daisy/xprocspec" version="v1.1.0" name="xprocspec">
    <title>xprocspec</title>
    <desc>This is a tool for testing XProc scripts. Its grammar is inspired by XSpec and is implemented in XProc.</desc>
    <license type="?"/>
