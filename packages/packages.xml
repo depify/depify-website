@@ -1,4 +1,4 @@
-<packages xmlns="https://github.com/depify" ts="2015-02-21T17:24:10.599Z"><depify path="/packages/master/xslt/2/Schematron/1.6/.depify.xml" version="1.6" repo-uri="http://www.schematron.com/tmp/iso-schematron-xslt2.zip" name="schematron">
+<packages xmlns="https://github.com/depify" ts="2015-02-21T18:39:03.374Z"><depify path="/packages/master/xslt/2/Schematron/1.6/.depify.xml" version="1.6" repo-uri="http://www.schematron.com/tmp/iso-schematron-xslt2.zip" name="schematron">
   <title>ISO SCHEMATRON 2010</title>
   <desc>ISO Schematron is a language for making assertion about the presence or absense
     of patterns in XML documents. It is typically used for as a schema language, or
@@ -132,6 +132,19 @@
    </license>
    <author id="jpcs">John Snelson</author>
    <website>https://github.com/jpcs/data.xq</website>
+</depify><depify path="/packages/master/xquery/1/xquerydoc/0.1/.depify.xml" repo-uri="https://github.com/xquery/xquerydoc" version="0.1" name="xquerydoc">
+  <title>xquerydoc</title>
+  <desc>generate XQuery API documentation from your source code comments.</desc>
+  <license type="APLV2">
+    <uri>https://github.com/xquery/xquerydoc/blob/master/LICENCE</uri>
+  </license>
+  <author id="jpcs">John Snelson</author>
+  <author id="xquery">Jim Fuller</author>
+  <xquery version="1.0">
+    <prefix>xqdoc</prefix>
+    <namespace>http://github.com/xquery/xquerydoc</namespace>
+    <uri>xquerydoc.xq</uri>
+  </xquery>
 </depify><depify path="/packages/master/xquery/1/functx/1.0/.depify.xml" repo-uri="" version="1.0" name="xquery.1.functx">
  <title>FunctX library</title>
  <desc>The FunctX function library is a set of useful functions on
