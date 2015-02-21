@@ -137,10 +137,9 @@
           </xsl:if>
           <xsl:if test="not(ends-with(@repo-uri,'.zip'))">
           <core-item icon="launch" label="repo">
-            <a href="{@repo-uri}" target="_website"/>
+            <a href="{@repo-uri}" target="_repo"/>
           </core-item>
           </xsl:if>
-
           <xsl:if test="depify:website">
           <core-item icon="launch" label="website">
             <a href="{depify:website}" target="_website"/>
@@ -148,7 +147,6 @@
           </xsl:if>
         </td>        
       </tr>
-      
     </xsl:for-each>
     
   </tbody>
@@ -229,10 +227,9 @@
           </xsl:if>
           <xsl:if test="not(ends-with(@repo-uri,'.zip'))">
           <core-item icon="launch" label="repo">
-            <a href="{@repo-uri}" target="_website"/>
+            <a href="{@repo-uri}" target="_repo"/>
           </core-item>
           </xsl:if>
-
           <xsl:if test="depify:website">
           <core-item icon="launch" label="website">
             <a href="{depify:website}" target="_website"/>
@@ -240,7 +237,6 @@
           </xsl:if>
        </td>         
       </tr>
-      
     </xsl:for-each>
     
   </tbody>
