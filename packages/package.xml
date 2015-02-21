@@ -1,4 +1,4 @@
-<packages xmlns="https://github.com/depify" ts="2015-02-21T15:24:07.429Z"><depify path="/packages/master/xslt/2/Schematron/1.6/.depify.xml" version="1.6" repo-uri="http://www.schematron.com/tmp/iso-schematron-xslt2.zip" name="schematron">
+<packages xmlns="https://github.com/depify" ts="2015-02-21T15:47:30.345Z"><depify path="/packages/master/xslt/2/Schematron/1.6/.depify.xml" version="1.6" repo-uri="http://www.schematron.com/tmp/iso-schematron-xslt2.zip" name="schematron">
   <title>ISO SCHEMATRON 2010</title>
   <desc>ISO Schematron is a language for making assertion about the presence or absense
     of patterns in XML documents. It is typically used for as a schema language, or
@@ -219,5 +219,5 @@ Unlike previous releases, Saxon-CE 1.1 is open-source software.
   </desc>
   <license type="MPL-V2.0"/>
   <author id="">Saxonica</author>
-  <website>http://www.saxonica.com/ce/index.xml/</website>
+  <website>http://www.saxonica.com/ce/index.xml</website>
 </depify></packages>
