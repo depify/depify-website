@@ -79,7 +79,6 @@
       <tr>
         <th>type</th>
         <th>package</th>
-        <th>description</th>
         <th>action</th>
       </tr>
     </thead>
@@ -113,9 +112,11 @@
         </xsl:choose>
         <xsl:value-of select="substring-before(substring-after(@path,'/packages/master/'),'/')"/></td>
         
-        <td><span style="padding-left:20px;font-size:1.2em;"><b><xsl:value-of select="@name"/></b> <sup style="margin-left:5px;font-size:.6em;">[<xsl:value-of select="@version"/>]</sup></span></td>
+        <td><span style="padding-left:20px;font-size:1.2em;"><b><xsl:value-of select="@name"/></b> <sup style="margin-left:5px;font-size:.6em;"><xsl:value-of select="@version"/></sup></span> 
 
-        <td><p style="margin:20px;font-size: 0.8em;"><xsl:value-of select="depify:desc"/></p></td>        
+        <p style="margin:20px;font-size: 0.8em;"><xsl:value-of select="depify:desc"/> | <i><xsl:value-of select="depify:author"/></i></p>
+
+        </td>        
         <td style="text-align:left;margin-left:5px">
           <xsl:choose>
           <xsl:when test="contains(@repo-uri,'github.com')">
@@ -175,7 +176,6 @@
       <tr>
         <th>type</th>
         <th>package</th>
-        <th>description</th>
         <th>action</th>
       </tr>
     </thead>
@@ -208,10 +208,11 @@
           </xsl:otherwise>
         </xsl:choose>
         <xsl:value-of select="substring-before(substring-after(@path,'/packages/master/'),'/')"/></td>
-        
-        <td><b style="padding-left:20px;font-size:1.2em;"><xsl:value-of select="@name"/></b> <sup style="margin-left:5px;font-size:.6em;">[<xsl:value-of select="@version"/>]</sup></td>
 
-        <td><p style="margin:20px;font-size: 0.8em;"><xsl:value-of select="depify:desc"/></p></td>        
+        <td><span style="padding-left:20px;font-size:1.2em;"><b><xsl:value-of select="@name"/></b> <sup style="margin-left:5px;font-size:.6em;"><xsl:value-of select="@version"/></sup></span>
+
+        <p style="margin:20px;font-size: 0.8em;"><xsl:value-of select="depify:desc"/> | <i><xsl:value-of select="depify:author"/></i></p></td>        
+        
         <td style="text-align:left">
           <xsl:choose>
           <xsl:when test="contains(@repo-uri,'github.com')">
