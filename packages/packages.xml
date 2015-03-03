@@ -1,4 +1,4 @@
-<packages xmlns="https://github.com/depify" ts="2015-03-03T18:27:38.841Z"><depify path="/packages/master/xslt/2/Schematron/1.6/.depify.xml" version="1.6" repo-uri="http://www.schematron.com/tmp/iso-schematron-xslt2.zip" name="schematron">
+<packages xmlns="https://github.com/depify" ts="2015-03-03T18:47:10.986Z"><depify path="/packages/master/xslt/2/Schematron/1.6/.depify.xml" version="1.6" repo-uri="http://www.schematron.com/tmp/iso-schematron-xslt2.zip" name="schematron">
   <title>ISO SCHEMATRON 2010</title>
   <desc>ISO Schematron is a language for making assertion about the presence or absense
     of patterns in XML documents. It is typically used for as a schema language, or
@@ -176,7 +176,7 @@
    <license type="?"/>
    <author id="ndw">Norm Walsh</author>
    <website>https://github.com/ndw/xmlcalabash1-xcc</website>
-   <xproc version="1.0" ns="http://xmlcalabash.com/ns/extensions" jar="xmlcalabash1-xcc-1.0.0.jar" library-uri="!/library.xpl">
+   <xproc version="1.0" ns="http://xmlcalabash.com/ns/extensions" jar="xmlcalabash1-xcc-1.0.0/xmlcalabash1-xcc-1.0.0.jar" library-uri="!/library.xpl">
    </xproc>
 </depify><depify path="/packages/master/xproc/xmlcalabash/rdf/1.0.0/.depify.xml" repo-uri="https://github.com/ndw/xmlcalabash1-rdf" version="1.0.0" name="xmlcalabash1-rdf">
    <title>xmlcalabash1-rdf</title>
@@ -184,7 +184,7 @@
    <license type="?"/>
    <author id="ndw">Norm Walsh</author>
    <website>https://github.com/ndw/xmlcalabash1-rdf</website>
-   <xproc version="1.0" ns="http://xmlcalabash.com/ns/extensions" jar="xmlcalabash1-rdf-1.0.0.jar" library-uri="!/library.xpl">
+   <xproc version="1.0" ns="http://xmlcalabash.com/ns/extensions" jar="xmlcalabash1-rdf-1.0.0/xmlcalabash1-rdf-1.0.0.jar" library-uri="!/library.xpl">
    </xproc>
 </depify><depify path="/packages/master/xproc/xmlcalabash/example/1.0/.depify.xml" repo-uri="https://github.com/xquery/xmlcalabash-ext-step-java" version="1.0" name="xmlcalabash-ext-step-java">
    <title>xmlcalabash-ext-step-java</title>
