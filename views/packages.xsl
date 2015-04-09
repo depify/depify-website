@@ -83,10 +83,10 @@
       </tr>
     </thead>
   <tbody>     
-    <xsl:for-each select="ixsl:source()/depify:packages/depify:depify[matches(@path,$type,'i')]">
+    <xsl:for-each-group select="ixsl:source()/depify:packages/depify:depify[matches(@path,$type,'i')]" group-by="@name">
       <xsl:sort select="substring-before(substring-after(@path,'/packages/master/'),'/')"/>
-      <xsl:sort select="@name"/>
-      <tr id="{@name}">
+      <xsl:sort select="current-group()[1]/@name"/>
+            <tr id="{current-group()[1]/@name}">
         <td style="text-align:center;">
         <xsl:choose>
           <xsl:when test="fn:contains(@path,'/xslt/')">
@@ -112,9 +112,9 @@
         </xsl:choose>
         <xsl:value-of select="substring-before(substring-after(@path,'/packages/master/'),'/')"/></td>
         
-        <td><span style="padding-left:20px;font-size:1.2em;"><b><xsl:value-of select="@name"/></b> <sup style="margin-left:5px;font-size:.6em;"><xsl:value-of select="@version"/></sup></span> 
+        <td><span style="padding-left:20px;font-size:1.2em;"><b><xsl:value-of select="current-group()[1]/@name"/></b> <sup style="margin-left:5px;font-size:.6em;">[<xsl:value-of select="current-group()/@version" separator="] ["/>]</sup></span> 
 
-        <p style="margin:20px;font-size: 0.8em;"><xsl:value-of select="depify:desc"/> | <i><xsl:value-of select="depify:author"/></i></p>
+        <p style="margin:20px;font-size: 0.8em;"><xsl:value-of select="current-group()[last()]/depify:desc"/> | <i><xsl:value-of select="current-group()[last()]/depify:author"/></i></p>
 
         </td>        
         <td style="text-align:left;margin-left:5px">
@@ -147,7 +147,8 @@
           </xsl:if>
         </td>        
       </tr>
-    </xsl:for-each>
+    </xsl:for-each-group>
+    
     
   </tbody>
       </table>
