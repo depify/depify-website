@@ -217,7 +217,7 @@
           </xsl:when>
           <xsl:otherwise>
             <core-item icon="file-download" label="download">
-              <a href="{@repo-uri}/releases/latest" target="download"/>
+              <a href="{@repo-uri}/releases/{@version}" target="download"/>
             </core-item>
           </xsl:otherwise>
           </xsl:choose>
