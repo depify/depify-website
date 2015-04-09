@@ -112,7 +112,12 @@
         </xsl:choose>
         <xsl:value-of select="substring-before(substring-after(@path,'/packages/master/'),'/')"/></td>
         
-        <td><span style="padding-left:20px;font-size:1.2em;"><b><xsl:value-of select="current-group()[1]/@name"/></b> <sup style="margin-left:5px;font-size:.6em;">[<xsl:value-of select="current-group()/@version" separator="] ["/>]</sup></span> 
+        <td><span style="padding-left:20px;font-size:1.2em;"><b><xsl:value-of select="current-group()[1]/@name"/></b> <sup style="margin-left:5px;font-size:.6em;">
+<xsl:value-of select="current-group()[1]/@version"/>
+        <xsl:if test="count(current-group()) gt 1">
+          [<xsl:value-of select="subsequence(current-group()/@version,2,last())" separator="] ["/>]
+        </xsl:if>
+      </sup></span> 
 
         <p style="margin:20px;font-size: 0.8em;"><xsl:value-of select="current-group()[last()]/depify:desc"/> | <i><xsl:value-of select="current-group()[last()]/depify:author"/></i></p>
 
