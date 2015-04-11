@@ -1,4 +1,4 @@
-<packages xmlns="https://github.com/depify" ts="2015-04-10T17:42:06.865Z"><depify path="/packages/master/xproc/1/example-xproc-lib/1.0/.depify.xml" repo-uri="https://github.com/xquery/example-xproc-lib" version="1.0" name="example-xproc-lib">
+<packages xmlns="https://github.com/depify" ts="2015-04-11T17:01:29.532Z"><depify path="/packages/master/xproc/1/example-xproc-lib/1.0/.depify.xml" repo-uri="https://github.com/xquery/example-xproc-lib" version="1.0" name="example-xproc-lib">
    <title>example-xproc-lib</title>
    <desc>example implementation of xproc library, demonstrating depify packaging.</desc>
    <license type="?"/>
@@ -312,6 +312,8 @@
     <namespace>http://github.com/xquery/xquerydoc</namespace>
     <uri>xquerydoc.xq</uri>
   </xquery>
+  <xproc version="1.0" ns="http://github.com/xquery/xquerydoc" library-uri="xquerydoc-master/xquerydoc.xpl">
+  </xproc>
 </depify><depify path="/packages/master/xquery/marklogic/rxq/1.0/.depify.xml" version="1.0" repo-uri="https://github.com/xquery/rxq" name="rxq">
   <title>rxq</title>
   <desc>Use RXQ to build MVC/RESTful apps with MarkLogic XQuery.</desc>
