@@ -1,4 +1,4 @@
-<packages xmlns="https://github.com/depify" ts="2015-04-12T14:14:20.716Z"><depify path="/packages/master/xslt/2/xmlspectrum/1.0/.depify.xml" repo-uri="https://github.com/pgfearo/xmlspectrum" version="1.0" name="xmlspectrum">
+<packages xmlns="https://github.com/depify" ts="2015-04-17T17:20:53.721Z"><depify path="/packages/master/xslt/2/xmlspectrum/1.0/.depify.xml" repo-uri="https://github.com/pgfearo/xmlspectrum" version="1.0" name="xmlspectrum">
  <title>xmlspectrum</title>
  <desc>Syntax-highlighter and formatter for XQuery 3.0 , XSLT 3.0 and XPath 3.0 and any hosting XML</desc>
  <license type="APLv2"/>
@@ -183,69 +183,69 @@
    <namespace>http://www.functx.com</namespace>
    <uri>functx.xq</uri>
  </xquery>
-</depify><depify path="/packages/master/xproc/xmlcalabash/xmlunit/1.1.1/.depify.xml" repo-uri="https://github.com/ndw/xmlcalabash1-xmlunit" version="1.1.1" name="xmlcalabash1-xmlunit">
+</depify><depify path="/packages/master/xproc/xmlcalabash/xmlunit/1.1.2/.depify.xml" repo-uri="https://github.com/ndw/xmlcalabash1-xmlunit" version="1.1.2" name="xmlcalabash1-xmlunit">
   <title>xmlcalabash1-xmlunit</title>
   <desc>XML Calabash 1.0 extension step for XMLUnit</desc>
   <license type="?"/>
   <author id="ndw">Norman Walsh</author>
   <website>https://github.com/ndw/xmlcalabash1-xmlunit</website>
-  <xproc version="1.0" ns="http://xmlcalabash.com/ns/extensions" jar="xmlcalabash1-xmlunit-1.1.1/xmlcalabash1-xmlunit-1.1.1.jar" library-uri="!/library.xpl">
+  <xproc version="1.0" ns="http://xmlcalabash.com/ns/extensions" jar="xmlcalabash1-xmlunit-1.1.2/xmlcalabash1-xmlunit-1.1.2.jar" library-uri="!/library.xpl">
   </xproc>
-</depify><depify path="/packages/master/xproc/xmlcalabash/xcc/1.1.1/.depify.xml" repo-uri="https://github.com/ndw/xmlcalabash1-xcc" version="1.1.1" name="xmlcalabash1-xcc">
+</depify><depify path="/packages/master/xproc/xmlcalabash/xcc/1.1.2/.depify.xml" repo-uri="https://github.com/ndw/xmlcalabash1-xcc" version="1.1.2" name="xmlcalabash1-xcc">
   <title>xmlcalabash1-xcc</title>
   <desc>XML Calabash 1.0 MarkLogic XCC extension steps</desc>
   <license type="?"/>
   <author id="ndw">Norman Walsh</author>
   <website>https://github.com/ndw/xmlcalabash1-xcc</website>
-  <xproc version="1.0" ns="http://xmlcalabash.com/ns/extensions" jar="xmlcalabash1-xcc-1.1.1/xmlcalabash1-xcc-1.1.1.jar" library-uri="!/library.xpl">
+  <xproc version="1.0" ns="http://xmlcalabash.com/ns/extensions" jar="xmlcalabash1-xcc-1.1.2/xmlcalabash1-xcc-1.1.2.jar" library-uri="!/library.xpl">
   </xproc>
-</depify><depify path="/packages/master/xproc/xmlcalabash/sendmail/1.1.1/.depify.xml" repo-uri="https://github.com/ndw/xmlcalabash1-sendmail" version="1.1.1" name="xmlcalabash1-sendmail">
+</depify><depify path="/packages/master/xproc/xmlcalabash/sendmail/1.1.2/.depify.xml" repo-uri="https://github.com/ndw/xmlcalabash1-sendmail" version="1.1.2" name="xmlcalabash1-sendmail">
   <title>xmlcalabash1-sendmail</title>
   <desc>XML Calabash 1.0 extension step for sending email</desc>
   <license type="?"/>
   <author id="ndw">Norman Walsh</author>
   <website>https://github.com/ndw/xmlcalabash1-sendmail</website>
-  <xproc version="1.0" ns="http://xmlcalabash.com/ns/extensions" jar="xmlcalabash1-sendmail-1.1.1/xmlcalabash1-sendmail-1.1.1.jar" library-uri="!/library.xpl">
+  <xproc version="1.0" ns="http://xmlcalabash.com/ns/extensions" jar="xmlcalabash1-sendmail-1.1.2/xmlcalabash1-sendmail-1.1.2.jar" library-uri="!/library.xpl">
   </xproc>
-</depify><depify path="/packages/master/xproc/xmlcalabash/rdf/1.1.1/.depify.xml" repo-uri="https://github.com/ndw/xmlcalabash1-rdf" version="1.1.1" name="xmlcalabash1-rdf">
+</depify><depify path="/packages/master/xproc/xmlcalabash/rdf/1.1.2/.depify.xml" repo-uri="https://github.com/ndw/xmlcalabash1-rdf" version="1.1.2" name="xmlcalabash1-rdf">
   <title>xmlcalabash1-rdf</title>
   <desc>XML Calabash 1.0 extension step for RDF</desc>
   <license type="?"/>
   <author id="ndw">Norman Walsh</author>
   <website>https://github.com/ndw/xmlcalabash1-rdf</website>
-  <xproc version="1.0" ns="http://xmlcalabash.com/ns/extensions" jar="xmlcalabash1-rdf-1.1.1/xmlcalabash1-rdf-1.1.1.jar" library-uri="!/library.xpl">
+  <xproc version="1.0" ns="http://xmlcalabash.com/ns/extensions" jar="xmlcalabash1-rdf-1.1.2/xmlcalabash1-rdf-1.1.2.jar" library-uri="!/library.xpl">
   </xproc>
-</depify><depify path="/packages/master/xproc/xmlcalabash/print/1.1.1/.depify.xml" repo-uri="https://github.com/ndw/xmlcalabash1-print" version="1.1.1" name="xmlcalabash1-print">
+</depify><depify path="/packages/master/xproc/xmlcalabash/print/1.1.2/.depify.xml" repo-uri="https://github.com/ndw/xmlcalabash1-print" version="1.1.2" name="xmlcalabash1-print">
   <title>xmlcalabash1-print</title>
   <desc>XML Calabash 1.0 support for printing with XSL FO and CSS</desc>
   <license type="?"/>
   <author id="ndw">Norman Walsh</author>
   <website>https://github.com/ndw/xmlcalabash1-print</website>
-  <xproc version="1.0" ns="http://xmlcalabash.com/ns/extensions" jar="xmlcalabash1-print-1.1.1/xmlcalabash1-print-1.1.1.jar" library-uri="!/library.xpl">
+  <xproc version="1.0" ns="http://xmlcalabash.com/ns/extensions" jar="xmlcalabash1-print-1.1.2/xmlcalabash1-print-1.1.2.jar" library-uri="!/library.xpl">
   </xproc>
-</depify><depify path="/packages/master/xproc/xmlcalabash/plantuml/1.1.1/.depify.xml" repo-uri="https://github.com/ndw/xmlcalabash1-plantuml" version="1.1.1" name="xmlcalabash1-plantuml">
+</depify><depify path="/packages/master/xproc/xmlcalabash/plantuml/1.1.2/.depify.xml" repo-uri="https://github.com/ndw/xmlcalabash1-plantuml" version="1.1.2" name="xmlcalabash1-plantuml">
   <title>xmlcalabash1-plantuml</title>
   <desc>XML Calabash 1.0 extension step for PlantUML diagrams</desc>
   <license type="?"/>
   <author id="ndw">Norman Walsh</author>
   <website>https://github.com/ndw/xmlcalabash1-plantuml</website>
-  <xproc version="1.0" ns="http://xmlcalabash.com/ns/extensions" jar="xmlcalabash1-plantuml-1.1.1/xmlcalabash1-plantuml-1.1.1.jar" library-uri="!/library.xpl">
+  <xproc version="1.0" ns="http://xmlcalabash.com/ns/extensions" jar="xmlcalabash1-plantuml-1.1.2/xmlcalabash1-plantuml-1.1.2.jar" library-uri="!/library.xpl">
   </xproc>
-</depify><depify path="/packages/master/xproc/xmlcalabash/metadata-extractor/1.1.1/.depify.xml" repo-uri="https://github.com/ndw/xmlcalabash1-metadata-extractor" version="1.1.1" name="xmlcalabash1-metadata-extractor">
+</depify><depify path="/packages/master/xproc/xmlcalabash/metadata-extractor/1.1.2/.depify.xml" repo-uri="https://github.com/ndw/xmlcalabash1-metadata-extractor" version="1.1.2" name="xmlcalabash1-metadata-extractor">
   <title>xmlcalabash1-metadata-extractor</title>
   <desc>XML Calabash 1.0 extension step for image metadata extraction</desc>
   <license type="?"/>
   <author id="ndw">Norman Walsh</author>
   <website>https://github.com/ndw/xmlcalabash1-metadata-extractor</website>
-  <xproc version="1.0" ns="http://xmlcalabash.com/ns/extensions" jar="xmlcalabash1-metadata-extractor-1.1.1/xmlcalabash1-metadata-extractor-1.1.1.jar" library-uri="!/library.xpl">
+  <xproc version="1.0" ns="http://xmlcalabash.com/ns/extensions" jar="xmlcalabash1-metadata-extractor-1.1.2/xmlcalabash1-metadata-extractor-1.1.2.jar" library-uri="!/library.xpl">
   </xproc>
-</depify><depify path="/packages/master/xproc/xmlcalabash/mathml-to-svg/1.1.1/.depify.xml" repo-uri="https://github.com/ndw/xmlcalabash1-mathml-to-svg" version="1.1.1" name="xmlcalabash1-mathml-to-svg">
+</depify><depify path="/packages/master/xproc/xmlcalabash/mathml-to-svg/1.1.2/.depify.xml" repo-uri="https://github.com/ndw/xmlcalabash1-mathml-to-svg" version="1.1.2" name="xmlcalabash1-mathml-to-svg">
   <title>xmlcalabash1-mathml-to-svg</title>
   <desc>XML Calabash 1.0 extension step for converting MathML to SVG</desc>
   <license type="?"/>
   <author id="ndw">Norman Walsh</author>
   <website>https://github.com/ndw/xmlcalabash1-mathml-to-svg</website>
-  <xproc version="1.0" ns="http://xmlcalabash.com/ns/extensions" jar="xmlcalabash1-mathml-to-svg-1.1.1/xmlcalabash1-mathml-to-svg-1.1.1.jar" library-uri="!/library.xpl">
+  <xproc version="1.0" ns="http://xmlcalabash.com/ns/extensions" jar="xmlcalabash1-mathml-to-svg-1.1.2/xmlcalabash1-mathml-to-svg-1.1.2.jar" library-uri="!/library.xpl">
   </xproc>
 </depify><depify path="/packages/master/xproc/xmlcalabash/example/1.0/.depify.xml" repo-uri="https://github.com/xquery/xmlcalabash-ext-step-java" version="1.0" keep-fresh="true" name="xmlcalabash-ext-step-java">
    <title>xmlcalabash-ext-step-java</title>
@@ -256,21 +256,29 @@
    <xproc version="1.0" ns="http://example.org/xmlcalabash/steps" jar="example-library-ext.jar/example-library-ext.jar" library-uri="!/example-library.xpl">
      <!--catalog name="urn:example-library" jar="example-library-ext.jar" uri="/example-library.xpl"/-->
    </xproc>
-</depify><depify path="/packages/master/xproc/xmlcalabash/ditaa/1.1.1/.depify.xml" repo-uri="https://github.com/ndw/xmlcalabash1-ditaa" version="1.1.1" name="xmlcalabash1-ditaa">
+</depify><depify path="/packages/master/xproc/xmlcalabash/ditaa/1.1.2/.depify.xml" repo-uri="https://github.com/ndw/xmlcalabash1-ditaa" version="1.1.2" name="xmlcalabash1-ditaa">
   <title>xmlcalabash1-ditaa</title>
   <desc>XML Calabash 1.0 extension step for DiTAA diagrams</desc>
   <license type="?"/>
   <author id="ndw">Norman Walsh</author>
   <website>https://github.com/ndw/xmlcalabash1-ditaa</website>
-  <xproc version="1.0" ns="http://xmlcalabash.com/ns/extensions" jar="xmlcalabash1-ditaa-1.1.1/xmlcalabash1-ditaa-1.1.1.jar" library-uri="!/library.xpl">
+  <xproc version="1.0" ns="http://xmlcalabash.com/ns/extensions" jar="xmlcalabash1-ditaa-1.1.2/xmlcalabash1-ditaa-1.1.2.jar" library-uri="!/library.xpl">
   </xproc>
-</depify><depify path="/packages/master/xproc/xmlcalabash/deltaxml/1.1.1/.depify.xml" repo-uri="https://github.com/ndw/xmlcalabash1-deltaxml" version="1.1.1" name="xmlcalabash1-deltaxml">
+</depify><depify path="/packages/master/xproc/xmlcalabash/deltaxml/1.1.2/.depify.xml" repo-uri="https://github.com/ndw/xmlcalabash1-deltaxml" version="1.1.2" name="xmlcalabash1-deltaxml">
   <title>xmlcalabash1-deltaxml</title>
   <desc>XML Calabash 1.0 extension step for running DeltaXML</desc>
   <license type="?"/>
   <author id="ndw">Norman Walsh</author>
   <website>https://github.com/ndw/xmlcalabash1-deltaxml</website>
-  <xproc version="1.0" ns="http://xmlcalabash.com/ns/extensions" jar="xmlcalabash1-deltaxml-1.1.1/xmlcalabash1-deltaxml-1.1.1.jar" library-uri="!/library.xpl">
+  <xproc version="1.0" ns="http://xmlcalabash.com/ns/extensions" jar="xmlcalabash1-deltaxml-1.1.2/xmlcalabash1-deltaxml-1.1.2.jar" library-uri="!/library.xpl">
+  </xproc>
+</depify><depify path="/packages/master/xproc/xmlcalabash/asciidoctor/1.1.0/.depify.xml" repo-uri="https://github.com/ndw/xmlcalabash1-asciidoctor" version="1.1.0" name="xmlcalabash1-asciidoctor">
+  <title>xmlcalabash1-asciidoctor</title>
+  <desc>XML Calabash 1.0 extension step for converting AsciiDoc documents</desc>
+  <license type="?"/>
+  <author id="ndw">Norman Walsh</author>
+  <website>https://github.com/ndw/xmlcalabash1-asciidoctor</website>
+  <xproc version="1.0" ns="http://xmlcalabash.com/ns/extensions" jar="xmlcalabash1-asciidoctor-1.1.0/xmlcalabash1-asciidoctor-1.1.0.jar" library-uri="!/library.xpl">
   </xproc>
 </depify><depify path="/packages/master/xproc/1/xprocspec/v1.1.0/.depify.xml" repo-uri="https://github.com/daisy/xprocspec" version="v1.1.0" name="xprocspec">
    <title>xprocspec</title>
