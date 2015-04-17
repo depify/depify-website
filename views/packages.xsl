@@ -119,8 +119,10 @@
         </xsl:if>
       </sup></span> 
 
-        <p style="margin:20px;font-size: 0.8em;"><xsl:value-of select="current-group()[last()]/depify:desc"/> | <i><xsl:value-of select="current-group()[last()]/depify:author"/></i></p>
-
+      <p style="margin:20px;font-size: 0.8em;"><xsl:value-of select="current-group()[last()]/depify:desc"/> | <i><xsl:value-of select="current-group()[last()]/depify:author"/></i></p>
+      <p style="float:right;margin:20px;font-size: 0.8em;">
+       <label>install: </label> <input disabled="disabled" size="50" value="depify install {current-group()[1]/@name} {current-group()[1]/@version}"/>
+      </p>
         </td>        
         <td style="text-align:left;margin-left:5px">
           <xsl:choose>
