@@ -31,7 +31,7 @@
     
     <xsl:result-document href="#packages" method="ixsl:replace-content">
       <xsl:call-template name="display">
-        <xsl:with-param name="type">(xproc|xquery|xslt|schema|js|xml)</xsl:with-param>
+        <xsl:with-param name="type">(xproc)</xsl:with-param>
       </xsl:call-template>
     </xsl:result-document>
     
