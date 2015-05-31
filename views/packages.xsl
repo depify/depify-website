@@ -18,7 +18,7 @@
      <xsl:variable name="q" select="normalize-space(ixsl:get(//input[@id='search-q'], 'value'))"/>
     <xsl:result-document href="#packages" method="ixsl:replace-content">
       <xsl:call-template name="display-search">
-        <xsl:with-param name="type" select="$q" default="xproc"/>
+        <xsl:with-param name="type" select="$q"/>
       </xsl:call-template>
     </xsl:result-document>
   </xsl:template>
