@@ -1,4 +1,4 @@
-<packages xmlns="https://github.com/depify" ts="2015-04-17T17:20:53.721Z"><depify path="/packages/master/xslt/2/xmlspectrum/1.0/.depify.xml" repo-uri="https://github.com/pgfearo/xmlspectrum" version="1.0" name="xmlspectrum">
+<packages xmlns="https://github.com/depify" ts="2015-06-07T11:05:29.335Z"><depify path="/packages/master/xslt/2/xmlspectrum/1.0/.depify.xml" repo-uri="https://github.com/pgfearo/xmlspectrum" version="1.0" name="xmlspectrum">
  <title>xmlspectrum</title>
  <desc>Syntax-highlighter and formatter for XQuery 3.0 , XSLT 3.0 and XPath 3.0 and any hosting XML</desc>
  <license type="APLv2"/>
@@ -230,6 +230,14 @@
   <author id="ndw">Norman Walsh</author>
   <website>https://github.com/ndw/xmlcalabash1-plantuml</website>
   <xproc version="1.0" ns="http://xmlcalabash.com/ns/extensions" jar="xmlcalabash1-plantuml-1.1.2/xmlcalabash1-plantuml-1.1.2.jar" library-uri="!/library.xpl">
+  </xproc>
+</depify><depify path="/packages/master/xproc/xmlcalabash/pegdown/1.1.0/.depify.xml" repo-uri="https://github.com/ndw/xmlcalabash1-pegdown" version="1.1.0" name="xmlcalabash1-pegdown">
+  <title>xmlcalabash1-pegdown</title>
+  <desc>XML Calabash 1.0 extension step for converting markdown documents</desc>
+  <license type="?"/>
+  <author id="ndw">Norman Walsh</author>
+  <website>https://github.com/ndw/xmlcalabash1-pegdown</website>
+  <xproc version="1.0" ns="http://xmlcalabash.com/ns/extensions" jar="xmlcalabash1-pegdown-1.1.0/xmlcalabash1-pegdown-1.1.0.jar" library-uri="!/library.xpl">
   </xproc>
 </depify><depify path="/packages/master/xproc/xmlcalabash/metadata-extractor/1.1.2/.depify.xml" repo-uri="https://github.com/ndw/xmlcalabash1-metadata-extractor" version="1.1.2" name="xmlcalabash1-metadata-extractor">
   <title>xmlcalabash1-metadata-extractor</title>
